@@ -1,0 +1,18 @@
+body {
+	margin: 0; 
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+#mario {
+	z-index: 10;
+}
+
+#pipe {
+	z-index: 20;
+}
+
+#pipe-pic {
+	width: 13.5%
+}
