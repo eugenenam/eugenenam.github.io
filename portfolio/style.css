@@ -1,7 +1,44 @@
-img.headshot {margin-left: auto;
-	 						margin-right: auto;
-							max-height: 150px;
-							max-width: 200px;
-							width: 120px;
-							height: 120px;
+#wrap {
+	width: 900px;
+	margin: 0 auto;
+}
+
+img.headshot {
+							display: block
+							margin-left: "justify";
+	 						margin-right: "justify";
+							width: 300px;
+							height: 300px;
+							}
+
+h3.header {
+					display: block
+					font-weight: bold;
+					font-family: Helvetica;
+					color: DarkSlateBlue;
+					align: "justify";
+					}
+
+
+p.project_name {
+					display: block;
+					font-weight: normal;
+					text-decoration: underline;
+					font-family: Helvetica;
+					color: black;
+					align: "justify";
+					}
+
+p.description {
+					display: block;
+					font-weight: normal;
+					text-decoration: underline;
+					font-family: Helvetica;
+					color: black;
+					align: "justify";
+							}
+
+div.container {
+					    border-style: solid;
+					    border-width: 1px;
 							}
