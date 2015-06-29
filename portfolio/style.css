@@ -1,2 +1,7 @@
-.headshot {height: "250" width: "250" align: center;
-					}
+img.headshot {margin-left: auto;
+	 						margin-right: auto;
+							max-height: 150px;
+							max-width: 200px;
+							width: 120px;
+							height: 120px;
+							}
