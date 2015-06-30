@@ -7,16 +7,28 @@ img.headshot {
 }
 
 
-
-.puppy_pics {
-	width: 500px;
-}
-/* for Class
-
-
-#puppy2 {
-	width: 75px;
-
+.header {
+        font-family: Tahoma;
+        color:inherit;
+        text-decoration: none; 
 }
 
-/* One particular ID for specificity
+
+
+.navbar {
+        list-style-type: none;
+        padding:0; margin:0;
+}
+
+
+
+#footer {
+        font-family: Tahoma;
+    
+}
+
+.unstyled { 
+        list-style-type: none;
+        padding:0; margin:0; 
+}
+
