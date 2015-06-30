@@ -1,3 +1,13 @@
+img.headshot {
+        display: block;
+        margin-left: "justify";
+        margin-right: "justify";
+        width: 300px;
+        height: 300px;
+}
+
+
+
 .puppy_pics {
 	width: 500px;
 }
