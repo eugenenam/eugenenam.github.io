@@ -23,12 +23,12 @@ img.headshot {
 }
 
 
-div.hr {
+hr {
     background: #fff no-repeat scroll center;
-    margin-left: 10px;
-    margin-right: 10px;
-    width: 2px;
-    height: 2px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 1000px;
+    height: 1px;
 }
 
 

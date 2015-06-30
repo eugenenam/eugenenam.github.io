@@ -1,0 +1,23 @@
+body {
+    font-family: Tahoma;
+}
+
+#container {
+    margin: 0 auto;
+    width: 1000px;
+    text-align: left;
+}
+
+img.headshot {
+        display: block;
+        margin-left: "justify";
+        margin-right: "justify";
+        width: 150px;
+        height: 150px;
+}
+
+
+.header {
+        color: inherit;
+        text-decoration: none; 
+}
