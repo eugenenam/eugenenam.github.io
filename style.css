@@ -11,13 +11,14 @@ body {
 }
 
 img.headshot {
-        display: block;
+
         margin-left: "justify";
         margin-right: "justify";
         width: 20%;
         border-radius: 50%;
         padding-right: 10px;
         padding-bottom: 10px;
+        display: block;
 }
 
 
