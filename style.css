@@ -38,6 +38,10 @@ hr {
         margin: 0;
 }
 
+p {
+    font-size: 14px;
+}
+
 .summary {
         padding: 10;
         margin: 10;
@@ -51,6 +55,8 @@ footer {
 }
 
 .unstyled { 
+        font-size: 14px;
+        font-size-adjust: 0.5;
         list-style-type: none;
         padding: 0;
         margin: 0;

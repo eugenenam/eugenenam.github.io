@@ -19,5 +19,47 @@ img.headshot {
 
 .header {
         color: inherit;
-        text-decoration: none; 
+        text-decoration: none;
+}
+
+
+hr {
+    background: #fff no-repeat scroll center;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 1000px;
+    height: 1px;
+}
+
+
+.navbar {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+}
+
+p {
+    font-size: 14px;
+}
+
+.summary {
+        padding: 10;
+        margin: 10;
+        text-align: justify;
+}
+
+footer {
+        color: inherit;
+        text-decoration: none;
+
+}
+
+.unstyled {
+        font-size: 14px;
+        font-size-adjust: 0.5;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        color: inherit;
+        text-decoration: none;
 }
