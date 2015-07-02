@@ -20,23 +20,31 @@ img.headshot {
     float: left;
 }
 
-.name_tagline {
-    float: left;
-    font-family: 'Comfortaa', cursive;
-    font-weight: 700;
-    
-}
-
-.header {
+a.header {
     color: inherit;
     text-decoration: none;
+}
+
+div.name_tagline {
+    float: left;
+    font-family: 'Comfortaa', cursive;
+
+}
+
+.name {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.quote {
+    font-weight: 400;
+    font-size: 18px;
 }
 
 header a::after {
         content:" ";
         clear: left;
 }
-
 
 hr {
     background: #fff no-repeat scroll center;
@@ -46,7 +54,6 @@ hr {
     height: 1px;
     color: black;
 }
-
 
 .navbar {
     list-style-type: none;
