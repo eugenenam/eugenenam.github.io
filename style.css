@@ -1,34 +1,34 @@
 body {
     font-family: Tahoma;
-    background-image: url("images/backgrounds/dark_wood.png");
+    background-image: url("images/backgrounds/wild_oliva.png");
     background-repeat: repeat;
 }
 
 #container {
-    margin: 75px;
-    width: auto;
+    margin: 50px auto;
+    max-width: 800px;
     padding: 50px;
     background-image: url("images/backgrounds/debut_light.png");
     background-repeat: repeat;
+    
 }
 
 img.headshot {
-    width: 20%;
+    width: 150px;
     border-radius: 50%;
     padding-right: 10px;
     padding-bottom: 10px;
     float: left;
 }
 
-a.header {
-    color: inherit;
+a.top_header {
     text-decoration: none;
 }
 
 div.name_tagline {
     float: left;
+    align-content: center;
     font-family: 'Comfortaa', cursive;
-
 }
 
 .name {
@@ -42,16 +42,16 @@ div.name_tagline {
 }
 
 header a::after {
-        content:" ";
-        clear: left;
+    content:" ";
+    clear: left;
 }
 
 hr {
     background: #fff no-repeat scroll center;
-    margin-left: 0px;
-    margin-right: 0px;
-    width: 800px;
+    margin-left: 0px auto;
+    margin-right: 0px auto;
     height: 1px;
+    width: 800px;
     color: black;
 }
 
@@ -61,6 +61,7 @@ hr {
     margin: 0;
     text-align: center;
     font-family: 'Comfortaa', cursive;
+    position: abolute;
 }
 
 .navbar ul li {
@@ -68,7 +69,7 @@ hr {
 }
 
 .navbar ul li + li{
-    margin-left: 40px;
+    margin-left: 50px;
 }
 
 h4 {
