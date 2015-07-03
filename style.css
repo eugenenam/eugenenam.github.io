@@ -68,6 +68,10 @@ hr {
     font-family: 'Comfortaa', cursive;
 }
 
+.navbar a:hover {
+    text-decoration: underline;
+}
+
 .navbar ul li {
     display: inline-block;
 }
