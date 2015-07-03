@@ -5,9 +5,9 @@ body {
 }
 
 #container {
-    margin: 50px auto;
-    max-width: 1024px;
-    min-height: 768px;
+    margin: 50px ;
+    max-width: 1024px auto;
+    min-height: 768px auto;
     padding: 50px;
     background-image: url("images/backgrounds/debut_light.png");
     background-repeat: repeat;
@@ -28,7 +28,6 @@ a.top_header {
 div.name_tagline {
     float: left;
     font-family: 'Comfortaa', cursive;
-
 }
 
 .name {
@@ -40,8 +39,6 @@ div.name_tagline {
     font-weight: 400;
     font-size: 18px;
     word-wrap: normal;
-
-    
 }
 
 header a::after {
@@ -49,6 +46,7 @@ header a::after {
     clear: left;
 }
 
+/* HORIZONTAL LINE */
 hr {
     margin-left: 10px auto;
     margin-right: 10px auto;
@@ -57,11 +55,13 @@ hr {
     height: 0px;
 }
 
+/* REMOVES UNDERLINE FOR NAVIGATION LINKS */
 .navbar a {
-   text-decoration: none;}
+    text-decoration: none;
+}
 
 .navbar {
-    list-style-type: none;
+    list-style-type: none; /* REMOVE LISTS STYLE */
     padding: 0;
     margin: 0;
     text-align: center;
@@ -101,20 +101,21 @@ p {
     font-family: 'Lora', serif;
 }
 
-footer {
+ul.contacts {
     text-decoration: none;
-
-}
-
-.unstyled {
     font-size: 16px;
     list-style-type: none;
     padding: 0px;
     margin: 0px;
-    text-decoration: none;
     font-family: 'Lora', serif;
 }
 
+ul.contacts a:hover {
+    text-decoration: underline;
+
+    
+/* RESPONSIVE CODE */
+/* Large desktop */
 @media screen and (min-width: 600px) {
     header {
         float: ;
