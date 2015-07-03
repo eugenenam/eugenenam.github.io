@@ -48,9 +48,9 @@ header a::after {
 
 hr {
     background: #fff no-repeat scroll center;
-    margin-left: 0px auto;
-    margin-right: 0px auto;
-    height: 1px;
+    margin-left: 10px auto;
+    margin-right: 10px auto;
+    height: 0px;
     width: 800px;
     color: black;
 }
@@ -95,7 +95,7 @@ footer {
 }
 
 .unstyled {
-    font-size: 14px;
+    font-size: 16px;
     font-size-adjust: 0.5;
     list-style-type: none;
     padding: 0;
@@ -103,4 +103,18 @@ footer {
     color: inherit;
     text-decoration: none;
     font-family: 'Lora', serif;
+}
+
+@media screen and (min-width: 600px) {
+    header {
+        float: inherit;
+  }
+}
+
+@media screen and (max-width: 599px) {
+    header {
+        float: none;
+        display: inline-grid;
+    }
+    
 }
