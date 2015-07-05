@@ -21,9 +21,23 @@ hr.top_nav_divider {
 }
 
 hr.bottom_nav_divider {
-    margin-top: 20px;
+    margin-top: 10px;
+}
+
+div.navbar {
+    text-align: center;
 }
 
 p.summary {
     text-align: justify;
+}
+
+/* Footer */
+ul.contacts {
+    list-style-type: none;
+}
+
+ul.contacts a:hover {
+    
+
 }
