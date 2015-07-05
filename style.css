@@ -116,6 +116,11 @@ ul.contacts a:hover {
     
 /* RESPONSIVE CODE */
 /* Large desktop */
+@media (min-width: 1200px) { 
+    body    {
+    }
+}
+    
 @media screen and (min-width: 600px) {
     header {
         float: ;
@@ -126,11 +131,13 @@ ul.contacts a:hover {
     #container {
         margin: 25px;
     }
-
     .name_tagline {
         text-align: center;
     }
-    .navbar {
-    ;
+}
+    
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 1199px) { 
+    body    {
     }
 }
