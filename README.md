@@ -1,1 +1,0 @@
-# eugenenam.github.io

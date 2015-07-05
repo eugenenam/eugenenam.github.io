@@ -1,0 +1,29 @@
+img.headshot {
+    width: 30%;
+    border-radius: 50%;
+    padding: 0px;
+    float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h4.name {
+    text-align: center;
+}
+
+h5.quote {
+    text-align: center;
+}
+
+hr.top_nav_divider {
+    margin-bottom: 20px;
+}
+
+hr.bottom_nav_divider {
+    margin-top: 20px;
+}
+
+p.summary {
+    text-align: justify;
+}
