@@ -8,8 +8,9 @@ img.headshot {
     margin-right: auto;
 }
 /* My Header Name */
-h4.name {
+h3.name {
     text-align: center;
+    font-family:
 }
 
 /* Header Quote */
@@ -36,11 +37,42 @@ p.summary {
 }
 
 /* Footer */
-ul.contacts {
+ul.contacts li {
     list-style-type: none;
 }
 
-ul.contacts a:hover {
-    
-
+ul.contacts li a:link {
+    color: #000000;
+    text-decoration: none;
 }
+
+ul.contacts li a:visited {
+    color: #000000;
+    text-decoration: none;
+}
+
+ul.contacts li a:active {
+    color: #000000;
+    text-decoration: none;
+}
+
+ul.contacts li a:hover {
+    color: green;
+    text-decoration: underline;
+}
+
+
+/* JS Navigation */
+
+
+#navigation{
+  position:absolute;
+  top:120px;
+  left:0;
+}
+
+#navigation.fixed{
+  position:fixed;
+  top:16px;
+}
+
