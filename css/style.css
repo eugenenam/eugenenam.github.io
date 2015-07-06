@@ -7,11 +7,12 @@ img.headshot {
     margin-left: auto;
     margin-right: auto;
 }
-
+/* My Header Name */
 h4.name {
     text-align: center;
 }
 
+/* Header Quote */
 h5.quote {
     text-align: center;
 }
@@ -24,10 +25,12 @@ hr.bottom_nav_divider {
     margin-top: 10px;
 }
 
+/* Navigation Bar */
 div.navbar {
     text-align: center;
 }
 
+/* Paragraph formatting */
 p.summary {
     text-align: justify;
 }
