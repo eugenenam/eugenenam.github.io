@@ -43,7 +43,7 @@ ul.contacts li {
 
 ul.contacts li a:link {
     color: #000000;
-    text-decoration: none;
+    text-decoration: none;`
 }
 
 ul.contacts li a:visited {
@@ -60,19 +60,3 @@ ul.contacts li a:hover {
     color: green;
     text-decoration: underline;
 }
-
-
-/* JS Navigation */
-
-
-#navigation{
-  position:absolute;
-  top:120px;
-  left:0;
-}
-
-#navigation.fixed{
-  position:fixed;
-  top:16px;
-}
-
