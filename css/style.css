@@ -1,9 +1,7 @@
-.container {
-    border-left-width: 2px solid black;
-    border-right-width: 2px solid black;
+/*style.css*/
+@charset "utf-8";
 
-}
-
+/* MAIN HEADSHOT */
 img.headshot {
     width: 25%;
     border-radius: 50%;
@@ -24,13 +22,22 @@ h5.quote {
     text-align: center;
 }
 
+/* Subject Title */
+h5.subject {
+    margin-top: 1rem;
+}
+
+
+
+/*
 hr.top_nav_divider {
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 
 hr.bottom_nav_divider {
-    margin-top: 10px;
+    margin-top: 0px;
 }
+*/
 
 /* Navigation Bar */
 div.navbar {

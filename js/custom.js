@@ -12,7 +12,7 @@ function handleScroll(){
                : document.documentElement.scrollTop;
 
     // set the appropriate class on the navigation
-    document.getElementById('navigation').className =
+    document.getElementById('navbar').className =
         (offset > 104 ? 'fixed' : '');
 
   }
