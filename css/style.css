@@ -1,6 +1,10 @@
 /*style.css*/
 @charset "utf-8";
 
+body {
+    background-image: url(../images/bgrd/old_wall/old_wall.png); 
+}
+
 /* MAIN HEADSHOT */
 img.headshot {
     width: 25%;
@@ -119,3 +123,7 @@ ul.contacts li a:hover {
     color: green;
     text-decoration: underline;
 }
+
+
+/* Credit Attributions */
+/* Background pattern from subtlepatterns.com */
