@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../images/backgrounds/food/food2.png);  
+}
+
+/* font-family: 'Josefin Slab', serif; */
+
+
+.logo {
+    max-width: 80%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
+
+h5.section_title {
+    font-family: 'Alfa Slab One', cursive;
+}
+
+/* NAVIGATION */
+.fixed-nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 50px;
+    padding-top: 1.5rem;
+    background-color: #1B909E;
+}
+
+nav {
+    text-align: center;
+}
+
+
+/* MAIN WEBSITE BANNER */
+.banner {
+    width: 100%;
+}
+
+
+a.offset:before { 
+    display: block; 
+ 	  content: " "; 
+  	height: 100px; /* height of fixed nav bar */
+    margin-top: -50px; /* Give negative margin of your fixed element */  	
+    visibility: hidden; 
+}
+
+/* ABOUT US */
+div.aboutus {
+    
+}
+
+
+/* TILES */
+div.tiles {
+    padding: 1.5rem;
+    background-image: url(../images/backgrounds/texturetastic_gray/texturetastic_gray.png);
+}
+
+/* MENU SECTION */
+h5.subsection {
+    font-family: "Raleway", "", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+i.quote {
+    font-weight: 300;
+    font-size: 15px;
+}
+
+ul.food_drinks li {
+    list-style-type: none; 
+}
+
+div.appetizers {
+    background: green;
+    margin-left: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+div.beverages {
+    background: pink;
+    margin-right: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+div.burgers {
+    background: pink;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 1rem;
+}
+
+
+/* OUR MISSION */
+
+
+/* TALK TO US SECTION */
+
+
+
+.comment_us {
+    border-color: 1px gray;
+}
+
+
+
+ul.contacts li {
+    list-style-type: none; 
+}
+
+
+/* COPYRIGHT SECTION */
+hr.copyright_bar {
+    width: 100% auto;
+}
+
+.copyright {
+    text-align: center;
+}
+
+/* Credit Attributions */
+/* Background pattern from subtlepatterns.com */
