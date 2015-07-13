@@ -28,16 +28,14 @@ h5.section_title {
     height: 50px;
     padding-top: 1.5rem;
     background-color: #1B909E;
-    -webkit-box-shadow: 0 8px 6px -6px #999;
-       -moz-box-shadow: 0 8px 6px -6px #999;
-            box-shadow: 0 8px 6px -6px #999;
+    -webkit-box-shadow: 0 10px 6px -6px #999;
+       -moz-box-shadow: 0 10px 6px -6px #999;
+            box-shadow: 0 10px 6px -6px #999;
     
 }
 
 nav {
     text-align: center;
-    opacity: 0.9;
-    filter: alpha(opacity=50)
 }
 
 
@@ -65,11 +63,14 @@ div.aboutus {
 #tiles {
     padding: 1.5rem;
     background-image: url(../images/backgrounds/texturetastic_gray/texturetastic_gray.png);
+    -webkit-box-shadow: 8px 8px 6px -6px #999;
+       -moz-box-shadow: 8px 8px 6px -6px #999;
+            box-shadow: 8px 8px 6px -6px #999;
 }
 
 /* MENU SECTION */
 h5.subsection {
-    font-family: "Raleway", "", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Raleway", "", "Helvetica Neue",  Helvetica, Arial, sans-serif;
 }
 
 i.quote {
@@ -82,21 +83,21 @@ ul.food_drinks li {
 }
 
 div.appetizers {
-    background: green;
+    background: #1B909E;
     margin-left: 1rem;
     padding-left: 1rem;
     padding-right: 1rem;
 }
 
 div.beverages {
-    background: pink;
+    background: #1B909E;
     margin-right: 1rem;
     padding-left: 1rem;
     padding-right: 1rem;
 }
 
 div.burgers {
-    background: pink;
+    background: #1B909E;
     margin-left: 1rem;
     margin-right: 1rem;
     padding: 1rem;

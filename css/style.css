@@ -41,32 +41,40 @@ h5.subject {
 }
 
 
-/*
-hr.top_nav_divider {
-    margin-bottom: 0px;
-}
-
-hr.bottom_nav_divider {
-    margin-top: 0px;
-}
-*/
-
 /* Navigation Bar */
 div.navbar {
     text-align: center;
 }
 
 
+/* TILES */
+#tiles {
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    margin-bottom: 5rem;
+    background-image: url(../images/bgrd/retina_wood/retina_wood.png);
+    -webkit-box-shadow: 8px 8px 6px -6px #999;
+       -moz-box-shadow: 8px 8px 6px -6px #999;
+            box-shadow: 8px 8px 6px -6px #999;
+}
 /* Project Name */
-.project_name {
-
+.project_name { 
 }
 
 /* Project Tagline */
-.project_name {
-
+.project_tagline {
 }
 
+/* Project Description */
+.project_description {
+}
+
+iframe {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
 
 /** LIGHTBOX MARKUP **/
 .lightbox {
