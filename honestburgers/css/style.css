@@ -1,7 +1,8 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url(../images/backgrounds/food/food2.png);  
+    background-image: url(../images/backgrounds/food/food2.png);
+    background-attachment:fixed; /* fixed background */
 }
 
 /* font-family: 'Josefin Slab', serif; */
@@ -27,16 +28,22 @@ h5.section_title {
     height: 50px;
     padding-top: 1.5rem;
     background-color: #1B909E;
+    -webkit-box-shadow: 0 8px 6px -6px #999;
+       -moz-box-shadow: 0 8px 6px -6px #999;
+            box-shadow: 0 8px 6px -6px #999;
+    
 }
 
 nav {
     text-align: center;
+    opacity: 0.9;
+    filter: alpha(opacity=50)
 }
 
 
 /* MAIN WEBSITE BANNER */
 .banner {
-    width: 100%;
+    max-width: 100%;
 }
 
 
@@ -55,7 +62,7 @@ div.aboutus {
 
 
 /* TILES */
-div.tiles {
+#tiles {
     padding: 1.5rem;
     background-image: url(../images/backgrounds/texturetastic_gray/texturetastic_gray.png);
 }
