@@ -403,8 +403,7 @@ form {
 /* Misc
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 hr {
-  border-width: 0;
-  border-top: 1px solid #E1E1E1; }
+  border: 1px solid #E1E1E1; }
 
 hr.top_nav_divider {
     margin-bottom: .5rem;

@@ -24,6 +24,7 @@ img.headshot {
 h3.name {
     text-align: center;
     font-family: 'Nothing You Could Do', cursive;
+    text-shadow: 2px 2px 2px #d3d3d3;
 }
 
 /* font-family: 'Libre Baskerville', serif; */
@@ -104,9 +105,14 @@ p.summary {
     text-align: justify;
 }
 
-/* Footer */
+/* Find Me on the Web */
+ul.contacts {
+    text-align: right;
+}
+
 ul.contacts li {
     list-style-type: none;
+    display: inline-block;
 }
 
 ul.contacts li a:link {
@@ -129,6 +135,11 @@ ul.contacts li a:hover {
     text-decoration: underline;
 }
 
+/* Footer */
+p.copyright {
+    text-align: left;
+}
 
 /* Credit Attributions */
 /* Background pattern from subtlepatterns.com */
+/* Font Awesome by Dave Gandy - http://fontawesome.io */
