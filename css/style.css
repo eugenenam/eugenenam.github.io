@@ -105,7 +105,7 @@ p.summary {
     text-align: justify;
 }
 
-/* Find Me on the Web */
+/* Footer */
 ul.contacts {
     text-align: right;
 }
@@ -135,10 +135,22 @@ ul.contacts li a:hover {
     text-decoration: underline;
 }
 
-/* Footer */
 p.copyright {
     text-align: left;
 }
+
+    /* Larger than mobile */
+@media (min-width: 400px) {
+  ul.contacts {text-align: center;}
+  p.copyright {text-align: center;}
+}
+
+    /* Larger than phablet */
+@media (min-width: 550px) {
+  ul.contacts {text-align: right}
+  p.copyright {text-align: left;}
+}
+
 
 /* Credit Attributions */
 /* Background pattern from subtlepatterns.com */
