@@ -68,6 +68,7 @@ div.navbar {
 
 /* Project Description */
 .project_description {
+    text-align: justify;
 }
 
 iframe {
