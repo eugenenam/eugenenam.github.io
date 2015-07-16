@@ -19,7 +19,6 @@ img.headshot {
 	        box-shadow: 0 8px 6px -6px black;  
 }
 
-
 /* My Header Name */
 h3.name {
     text-align: center;
@@ -40,11 +39,25 @@ h5.subject {
     margin-top: 1rem;
 }
 
-
 /* Navigation Bar */
 div.navbar {
     text-align: center;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 7rem;
+    background-color: none;
 }
+
+nav.stick {
+    position: fixed;
+    top: 0;
+    z-index: 10000;
+    margin-top:12px;
+}
+
+
 
 
 /* TILES */
@@ -109,10 +122,12 @@ iframe {
 }
 
 
-/* Paragraph formatting */
+/* Paragraph formatting - About Me & Paragraph */ 
 p.summary {
     text-align: justify;
 }
+
+
 
 /* Footer */
 ul.contacts {

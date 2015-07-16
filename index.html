@@ -37,36 +37,45 @@
 </head>
 <body> <!-- Primary Page Layout ––––––––––––––––––––––––––––––––––– -->
   <div class="container">
-    
+   
 <!-- Top Header -->
     <div class="row">
       <div class="twelve columns" style="margin-top: 5%">
-        <a href="index.html"><img class="headshot" src="../images/headshot.jpg" onmouseover="this.src='../images/IMG_6860.JPG'" onmouseout="this.src='../images/headshot.jpg'" alt="Profile Image"/></a>
+        <a href="index.html"><img class="headshot" src="images/headshot.jpg" onmouseover="this.src='images/IMG_6860.JPG'" onmouseout="this.src='images/headshot.jpg'" alt="Profile Image"/></a>
         <h3 class="name">Eugene Nam</h3>
         <h5 class="quote"><i>I'm a former Finance guy transitioning into Tech, Web Design, and Product.</i></h5>
       </div> <!-- End of Columns class -->
     </div> <!-- End of Row class -->
   
- <!-- Start of Navigation Bar ––––––––––––––––––––––––––––––––––––––––– -->
-    <div class="row">
+<!-- End of Header –––––––––––––––––––––––––––– -->     
+
+    
+<!-- Start of Navigation Bar ––––––––––––––––––––––––––––––––––––––––– -->
+    
+    <div id="nav-anchor"></div>
+    <nav class="row">
       <div class="twelve columns" style="margin-top: 0%">
-        <hr class="top_nav_divider" /> <!-- Horizontal Line Divider -->
+        
+      <hr class="top_nav_divider" /> 
         
         <div class="navbar">
           <a href="index.html"><button>Home</button></a>
-          <a href="aboutme/index.html"><button>About Me</button></a>
-          <a href="portfolio/index.html"><button>Portfolio</button></a>
-          <a href="resume/index.html"><button>Resume</button></a>
+          <a href="#aboutme"><button>About Me</button></a>
+          <a href="#portfolio"><button>Portfolio</button></a>
+          <a href="#resume"><button>Resume</button></a>
         </div>
 
-        <hr class="bottom_nav_divider" /> <!-- Horizontal Line Divider -->
-
+      <hr class="bottom_nav_divider" />
+        
       </div> <!-- End of Columns class -->
-    </div> <!-- End of Row class -->  
+    </nav> <!-- End of Row class -->  
 
-<!-- End of Navigation Bar ––––––––––––––––––––––––––––––––––––––––– -->    
+    
+<!-- End of Navigation Bar ––––––––––––––––––––––––––––––––––––––––– --> 
 
-<!-- Start of Main Content –––––––––––––––––––––––––––––––––––––––––––– -->
+<!-- Start of About Me –––––––––––––––––––––––––––––––– -->
+    <A NAME="aboutme" class="offset"></A> <!-- Anchor point: About Me -->
+    <section id="aboutme">
     <h5 class="subject">Hi there!</h5>
     <div class="row">
       <div class="six columns" style="margin-top: 0%">
@@ -82,16 +91,97 @@
         </p>
       </div> <!-- End of Columns class -->
     </div> <!-- End of Row class -->  
+  </section> <!-- End of Section -->
+
+<!-- End of About Me –––––––––––––––––––––––––––––––––––––––––––– -->
+  
+
+<!-- Start of Projects / Portfolio -->
+  <A NAME="portfolio" class="offset"></A> <!-- Anchor point: Projects -->
+    <section id="portfolio">
+    <div class="row">
+      <div class="twelve columns" style="margin-top: 0%">
+        
+        <h5 class="subject">My Portfolio and Projects</h5>
+
+    <!-- Idea Hack –––––––––––––––––––––––––––––––––– -->
+        <div id="tiles">
+        <h5 class="project_name"><u>IdeaHack</u></h5>
+        <p class="project_tagline"><i>24-hour Ideation Session to improve Spare's growth strategy</i></p>
+        <p class="project_description">Company: <a href="http://sparenyc.org/" target="_blank"> Spare Change, Inc.</a></p>
+        <p class="project_description">Challenge: As part of the first week of <a href="https://www.startupinstitute.com/" >Startup Institute</a>, students were grouped into cross functionals teams to collaborate and ideate. Students were tasked to prioritize with little direction, think creatively, and quickly develop a sound strategy. For this IdeaHack, we were tasked to develop a content/growth strategy to improve user and partner acquisition for Spare while maintaining a $0 budget constraint.</p></p>
+        <iframe src="https://docs.google.com/presentation/d/1FgC168vUc0J0Waki6IYxHFdme7aOckeKOCiH7tR94Po/embed?start=false&loop=false&delayms=5000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+        </div> <!-- Close Idea Hack -->
+        
+        
+    <!-- Project 1 –––––––––––––––––––––––––––––––––– -->
+        <div id="tiles">
+        <h5 class="project_name"><u>PawPal</u></h5>
+        <p class="project_tagline"><i>Amber Alert for Dogs</i></p>
+
+        <!-- thumbnail image wrapped in a link -->
+        <a href="#img1">
+        <img class= src="../images/julie_puppy.jpg">
+        </a>
+
+        </div> <!-- Close Project 1 -->
+        
+        <!-- lightbox container hidden with CSS -->
+        <a href="#_" class="lightbox" id="img1">
+        <img src="../images/julie_puppy.jpg">
+        </a>
+
+        <div id="tiles">
+        <!-- Project 2 –––––––––––––––––––––––––––––––––– -->
+        <h5 class="project_name"><u>Whisky Me</u></h5>
+        <p class="project_tagline"><i>Learn, Discover and Enjoy Whisky”</i></p>
+
+        </p>
+
+      
+        </div> <!-- Close Project 1 -->
+
+      </div> <!-- End of Columns class -->
+    </div> <!-- End of Row class -->    
+  </section> <!-- End of Section>
+
+<!-- End of Portfolio/Projects ––––––––––––––––––––––––––––– -->
+  
+
+<!-- Beginning of Resume  ––––––––––––––––––––––––––––––––––– -->   
+<A NAME="resume" class="offset"></A> <!-- Anchor point: Resume -->
+  <section id="resume">
+    <div class="row">
+      <div class="twelve columns" style="margin-top: 0%">
+        <h5 class="subject">My Resume</h5>
+
+      </div> <!-- End of Columns class -->
+    </div> <!-- End of Row class -->    
+
     
-     
+    <div class="row">
+      <div class="six columns" style="margin-top: 0%">
+        <p class="summary"><u>Web Design Skills (in progress):</u><br>
+HTML + CSS, Javascript, Rapid Ideation &amp; Prototyping, User-Centered UX/UI Design, Product Management.
+        </div> <!-- End of Columns class -->
+        
+      
+      <div class="six columns" style="margin-top: 0%">
+        <p class="summary"><u>Financial Specialties:</u><br>
+Credit Risk Analysis and Management, Financial Analysis, Portfolio Management.
+        </p>
 
-<!-- End of Main Content –––––––––––––––––––––––––––––––––––––––––––– -->
-  
+        <!-- Link to PDF version of Resume -------------------------------------------- -->
+        
+      </div> <!-- End of Columns class -->
+    </div> <!-- End of Row class -->     
+  </section> <!-- End of Section -->
 
-  
+<!-- End of Resume –––––––––––––––-----–––––––––––––– -->
 
-  
-<!-- Beginning of Footer  ––––––––––––––––––––––––––––––––––– -->   
+
+
+<!-- Beginning of Footer ––––––––––––––––––––––––––––– -->
 <hr class="footer" /> <!-- Horizontal Line Divider --> 
   <div class="row">
     
@@ -136,4 +226,11 @@
 
   <!-- End Document ––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
+
+
+<!-- Scripts -->
+<script type="text/javascript" src="custom.js"></script>
+
+
+
 </html>
