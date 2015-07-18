@@ -1,11 +1,39 @@
 /*style.css*/
 @charset "utf-8";
 
+/*
+@font-face {
+    font-family: 'Quicksand';
+    src: url("../fonts/quicksand/Quicksand-Regular.otf") format("opentype");
+}
+*/
+
 body {
-    background-image: url(../images/bgrd/old_wall/old_wall.png); 
+    font-family: 'Raleway', 'HelveticaNeue', 'Arial', sans-serif;
+
 }
 
-/* MAIN HEADSHOT */
+#banner {
+    background: url(../images/bgrd/denim/denim.png);
+    height: 5.0rem;
+    width: 100%;
+    margin-bottom: 1rem;
+    z-index: auto;
+    text-align: center;
+    color: white;
+    font-family: 'Raleway', 'HelveticaNeue', 'Arial', sans-serif;
+    -webkit-box-shadow: 0 8px 6px -6px black;
+	   -moz-box-shadow: 0 8px 6px -6px black;
+	        box-shadow: 0 8px 6px -6px black;  
+}
+
+.title {
+    padding-top: auto;
+    padding-bottom: auto;
+}
+
+/* Headshot */
+
 img.headshot {
     width: 25%;
     border-radius: 50%;
@@ -19,111 +47,50 @@ img.headshot {
 	        box-shadow: 0 8px 6px -6px black;  
 }
 
-/* My Header Name */
-h3.name {
+
+/* Header */
+header {
     text-align: center;
-    font-family: 'Nothing You Could Do', cursive;
+}
+  
+.name {
+    font-size: 4.0rem;
+    font-family: 'Nothing You Could Do', 'HelveticaNeue', sans-serif;
     text-shadow: 2px 2px 2px #d3d3d3;
 }
 
-/* font-family: 'Libre Baskerville', serif; */
+.tagline {
+    font-family: 'Raleway', 'HelveticaNeue', 'Arial', sans-serif;
 
-/* Header Quote */
-h5.quote {
+}
+
+/* Navigation */
+nav {
     text-align: center;
-    font-size: 18px;
 }
 
-/* Subject Title */
-h5.subject {
-    margin-top: 1rem;
-}
-
-/* Navigation Bar */
-div.navbar {
-    text-align: center;
-    top: 0;
-    left: 0;
-    z-index: 9999;
-    width: 100%;
-    height: 7rem;
-    background-color: none;
-}
-
-nav.stick {
-    position: fixed;
-    top: 0;
-    z-index: 10000;
-    margin-top:12px;
+button {
+    border: none;
+    width: 10rem;
 }
 
 
+/* About Me */
 
 
-/* TILES */
-#tiles {
-    padding: 1.5rem;
-    border-radius: 10px;
-    border: 1px solid lightgray;
-    margin-bottom: 5rem;
-    background-image: url(../images/bgrd/retina_wood/retina_wood.png);
-    -webkit-box-shadow: 8px 8px 6px -6px #999;
-       -moz-box-shadow: 8px 8px 6px -6px #999;
-            box-shadow: 8px 8px 6px -6px #999;
-}
-/* Project Name */
-.project_name { 
+/* Projects */
+div.thumbnail img {
+    min-height: 15rem;
+
 }
 
-/* Project Tagline */
-.project_tagline {
-}
-
-/* Project Description */
-.project_description {
+div.caption p {
     text-align: justify;
 }
 
-iframe {
-    max-width: 100%;
-    display: block;
-    margin: 0 auto;
-}
 
-/** LIGHTBOX MARKUP **/
-.lightbox {
-	/** Default lightbox to hidden */
-	display: none;
-
-	/** Position and style */
-	position: fixed;
-	z-index: 999;
-	width: 100%;
-	height: 100%;
-	text-align: center;
-	top: 0;
-	left: 0;
-	background: rgba(0,0,0,0.8);
-}
-
-.lightbox img {
-	/** Pad the lightbox image */
-	max-width: 90%;
-	max-height: 80%;
-	margin-top: 2%;
-}
-
-.lightbox:target {
-	/** Remove default browser outline */
-	outline: none;
-
-	/** Unhide lightbox **/
-	display: block;
-}
-
-
-/* Paragraph formatting - About Me & Paragraph */ 
-p.summary {
+/* Resume */
+ul li {
     text-align: justify;
 }
 
@@ -132,8 +99,8 @@ p.resume {
 }
 
 
-
 /* Footer */
+
 ul.contacts {
     text-align: right;
 }
@@ -158,8 +125,23 @@ ul.contacts li a:active {
     text-decoration: none;
 }
 
-ul.contacts li a:hover {
-    color: green;
+ul.contacts li.twitter a:hover {
+    color: #55acee;
+    text-decoration: none;
+}
+
+ul.contacts li.instagram a:hover {
+    color: #517fa4;
+    text-decoration: none;
+}
+
+ul.contacts li.linkedin a:hover {
+    color: #0077B5;
+    text-decoration: none;
+}
+
+ul.contacts li.email a:hover {
+    color: #dd4b39 ;
     text-decoration: none;
 }
 
@@ -167,7 +149,8 @@ p.copyright {
     text-align: left; 
 }
 
-    /* Larger than mobile */
+
+ /* Larger than mobile */
 @media (min-width: 400px) {
   ul.contacts {text-align: center;}
   p.copyright {text-align: center;}
