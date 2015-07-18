@@ -127,6 +127,10 @@ p.summary {
     text-align: justify;
 }
 
+p.resume {
+    text-align: center;
+}
+
 
 
 /* Footer */
@@ -156,11 +160,11 @@ ul.contacts li a:active {
 
 ul.contacts li a:hover {
     color: green;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 p.copyright {
-    text-align: left;
+    text-align: left; 
 }
 
     /* Larger than mobile */
