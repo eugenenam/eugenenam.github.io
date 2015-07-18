@@ -32,8 +32,8 @@ body {
     padding-bottom: auto;
 }
 
-/* Headshot */
 
+/* Headshot */
 img.headshot {
     width: 25%;
     border-radius: 50%;
@@ -78,6 +78,7 @@ button {
 /* About Me */
 
 
+
 /* Projects */
 div.thumbnail img {
     min-height: 15rem;
@@ -90,9 +91,6 @@ div.caption p {
 
 
 /* Resume */
-ul li {
-    text-align: justify;
-}
 
 p.resume {
     text-align: center;
@@ -102,7 +100,7 @@ p.resume {
 /* Footer */
 
 ul.contacts {
-    text-align: right;
+    
 }
 
 ul.contacts li {
