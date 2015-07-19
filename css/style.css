@@ -45,27 +45,6 @@ img.headshot1 {
 }
 
 
-img.headshot2 {
-    width: 50%;
-    border-radius: 50%;
-    float: none;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    -webkit-box-shadow: 0 8px 6px -6px black;
-	   -moz-box-shadow: 0 8px 6px -6px black;
-	        box-shadow: 0 8px 6px -6px black;  
-}
-
-/* For Mobile*/
-@media (max-width: 400px) {
-  img.headshot2 {
-    margin-top: 1.0em;
-    margin-bottom: 1.0em;    
-  }
-}
-
-
 /* Header */
 header {
     text-align: center;
@@ -101,6 +80,26 @@ p.summary {
     margin-right: 1rem;
 }
 
+img.headshot2 {
+    width: 50%;
+    border-radius: 50%;
+    float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-box-shadow: 0 8px 6px -6px black;
+	   -moz-box-shadow: 0 8px 6px -6px black;
+	        box-shadow: 0 8px 6px -6px black;  
+}
+
+/* For Mobile*/
+@media (max-width: 400px) {
+  img.headshot2 {
+    margin-top: 1.0em;
+    margin-bottom: 1.0em;    
+  }
+}
+
 
 /* Projects */
 div.thumbnail img {
@@ -126,6 +125,7 @@ p.copyright {
 
 ul.contacts {
     text-align: right;
+    vertical-align: top;
 }
 
 ul.contacts li {
@@ -169,18 +169,16 @@ ul.contacts li.email a:hover {
 }
 
 
-
-
  /* Larger than mobile */
-@media (min-width: 400px) {
-  ul.contacts {text-align: center;}
+@media (max-width: 400px) {
   p.copyright {text-align: center;}
+  ul.contacts {text-align: center;}
 }
 
     /* Larger than phablet */
-@media (min-width: 550px) {
-  ul.contacts {text-align: right}
-  p.copyright {text-align: left;}
+@media (max-width: 550px) {
+  p.copyright {text-align: center;}
+  ul.contacts {text-align: center;}
 }
 
 
