@@ -10,22 +10,20 @@
 
 body {
     font-family: 'Raleway', 'HelveticaNeue', 'Arial', sans-serif;
-
 }
 
-#banner {
-    background: url(../images/bgrd/denim/denim.png);
-    height: 5.0rem;
-    width: 100%;
+.container {
+    margin-top: 1rem;
     margin-bottom: 1rem;
-    z-index: auto;
-    text-align: center;
-    color: white;
-    font-family: 'Raleway', 'HelveticaNeue', 'Arial', sans-serif;
-    -webkit-box-shadow: 0 8px 6px -6px black;
-	   -moz-box-shadow: 0 8px 6px -6px black;
-	        box-shadow: 0 8px 6px -6px black;  
 }
+
+.tile1 {
+    background-color: #303235;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    border-radius: 10px;
+}
+
 
 .title {
     padding-top: auto;
@@ -33,9 +31,23 @@ body {
 }
 
 
-/* Headshot */
-img.headshot {
+/* Headshots*/
+img.headshot1 {
     width: 25%;
+    border-radius: 50%;
+    padding: 0px;
+    float: none;
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-box-shadow: 0 8px 6px -6px black;
+	   -moz-box-shadow: 0 8px 6px -6px black;
+	        box-shadow: 0 8px 6px -6px black;  
+}
+
+img.headshot2 {
+    width: 50%;
     border-radius: 50%;
     padding: 0px;
     float: none;
@@ -56,12 +68,13 @@ header {
 .name {
     font-size: 4.0rem;
     font-family: 'Nothing You Could Do', 'HelveticaNeue', sans-serif;
-    text-shadow: 2px 2px 2px #d3d3d3;
+    color: white;
+    
 }
 
 .tagline {
     font-family: 'Raleway', 'HelveticaNeue', 'Arial', sans-serif;
-
+    color: #C0C0C1;
 }
 
 /* Navigation */
@@ -98,9 +111,12 @@ p.resume {
 
 
 /* Footer */
+p.copyright {
+    text-align: left; 
+}
 
 ul.contacts {
-    
+    text-align: right;
 }
 
 ul.contacts li {
@@ -143,9 +159,7 @@ ul.contacts li.email a:hover {
     text-decoration: none;
 }
 
-p.copyright {
-    text-align: left; 
-}
+
 
 
  /* Larger than mobile */
