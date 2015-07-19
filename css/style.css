@@ -24,12 +24,10 @@ body {
     border-radius: 10px;
 }
 
-
 .title {
     padding-top: auto;
     padding-bottom: auto;
 }
-
 
 /* Headshots*/
 img.headshot1 {
@@ -46,10 +44,10 @@ img.headshot1 {
 	        box-shadow: 0 8px 6px -6px black;  
 }
 
+
 img.headshot2 {
     width: 50%;
     border-radius: 50%;
-    padding: 0px;
     float: none;
     display: block;
     margin-left: auto;
@@ -57,6 +55,14 @@ img.headshot2 {
     -webkit-box-shadow: 0 8px 6px -6px black;
 	   -moz-box-shadow: 0 8px 6px -6px black;
 	        box-shadow: 0 8px 6px -6px black;  
+}
+
+/* For Mobile*/
+@media (max-width: 400px) {
+  img.headshot2 {
+    margin-top: 1.0em;
+    margin-bottom: 1.0em;    
+  }
 }
 
 
@@ -89,7 +95,11 @@ button {
 
 
 /* About Me */
-
+p.summary {
+    text-align: justify;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
 
 
 /* Projects */
@@ -104,7 +114,6 @@ div.caption p {
 
 
 /* Resume */
-
 p.resume {
     text-align: center;
 }
