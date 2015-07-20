@@ -92,8 +92,6 @@ header {
 }
 
 
-
-
 .name {
     font-size: 4.0rem;
     font-family: 'Chunk', 'HelveticaNeue', sans-serif;
@@ -129,7 +127,7 @@ p.summary {
     margin-left: 1rem;
     margin-right: 1rem;
     text-align: justify;
-    font-size: 2.0rem;
+    font-size: 1.75rem;
 }
 
 

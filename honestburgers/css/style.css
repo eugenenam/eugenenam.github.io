@@ -1,47 +1,31 @@
+@charset "utf-8";
+
 body {
-    margin: 0;
-    padding: 0;
+    padding-top: 50px;
     background-image: url(../images/backgrounds/food/food2.png);
     background-attachment:fixed; /* fixed background */
 }
 
-/* font-family: 'Josefin Slab', serif; */
+/* NAVIGATION */
 
 
 .logo {
-    max-width: 80%;
-    height: auto;
+    max-width: 100%;
     width: auto\9; /* ie8 */
 }
 
-h5.section_title {
+
+#tagline{
     font-family: 'Alfa Slab One', cursive;
 }
 
-/* NAVIGATION */
-.fixed-nav-bar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 9999;
-    width: 100%;
-    height: 50px;
-    padding-top: 1.5rem;
-    background-color: #1B909E;
-    -webkit-box-shadow: 0 10px 6px -6px #999;
-       -moz-box-shadow: 0 10px 6px -6px #999;
-            box-shadow: 0 10px 6px -6px #999;
-    
-}
 
-nav {
-    text-align: center;
-}
 
 
 /* MAIN WEBSITE BANNER */
 .banner {
     max-width: 100%;
+    marg
 }
 
 
@@ -83,21 +67,21 @@ ul.food_drinks li {
 }
 
 div.appetizers {
-    background: #1B909E;
+    background: none;
     margin-left: 1rem;
     padding-left: 1rem;
     padding-right: 1rem;
 }
 
 div.beverages {
-    background: #1B909E;
+    background: none;
     margin-right: 1rem;
     padding-left: 1rem;
     padding-right: 1rem;
 }
 
 div.burgers {
-    background: #1B909E;
+    background: none;
     margin-left: 1rem;
     margin-right: 1rem;
     padding: 1rem;
@@ -108,12 +92,6 @@ div.burgers {
 
 
 /* TALK TO US SECTION */
-
-
-
-.comment_us {
-    border-color: 1px gray;
-}
 
 
 
