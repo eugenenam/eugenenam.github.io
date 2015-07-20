@@ -1,17 +1,27 @@
-$(document).ready(function(){
+/* Handles the page being scrolled by ensuring the navigation is always in
+ * view.
+ */
+function handleScroll(){
 
-    /** 
-     * This part does the "fixed navigation after scroll" functionality
-     * We use the jQuery function scroll() to recalculate our variables as the 
-     * page is scrolled/
-     */
-    $(window).scroll(function(){
-        var window_top = $(window).scrollTop() + 12; // the "12" should equal the margin-top value for nav.stick
-        var div_top = $('#nav-anchor').offset().top;
-            if (window_top > div_top) {
-                $('nav').addClass('stick');
-            } else {
-                $('nav').removeClass('stick');
-            }
-    });
+  // check that this is a relatively modern browser
+  if (window.XMLHttpRequest){
 
+    // determine the distance scrolled down the page
+    var offset = window.pageYOffset
+               ? window.pageYOffset
+               : document.documentElement.scrollTop;
+
+    // set the appropriate class on the navigation
+    document.getElementById('navigation').className =
+        (offset > 475 ? 'fixed' : '');
+
+  }
+
+}
+
+// add the scroll event listener
+if (window.addEventListener){
+  window.addEventListener('scroll', handleScroll, false);
+}else{
+  window.attachEvent('onscroll', handleScroll);
+}
