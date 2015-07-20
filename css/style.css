@@ -1,12 +1,28 @@
 /*style.css*/
 @charset "utf-8";
 
-/*
+/* FONTS */
 @font-face {
     font-family: 'Quicksand';
     src: url("../fonts/quicksand/Quicksand-Regular.otf") format("opentype");
 }
-*/
+
+@font-face {
+    font-family: 'Chunk';
+    src: url("../fonts/theleagueof-chunk-cd2d223/webfonts/Chunkfive-webfont.woff") format("woff");
+    src: url("../fonts/theleagueof-chunk-cd2d223/Chunk.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'League Spartan';
+    src: url('../fonts/league-spartan-master/_webfonts/leaguespartan-bold.eot');
+    src: url('../fonts/league-spartan-master/_webfonts/leaguespartan-bold.woff2') format('woff2'),
+         url('../fonts/league-spartan-master/_webfonts/leaguespartan-bold.woff') format('woff'),
+         url('../fonts/league-spartan-master/_webfonts/leaguespartan-bold.ttf') format('truetype'),
+         url('../fonts/league-spartan-master/_webfonts/leaguespartan-bold.svg#league_spartanbold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
 
 body {
     font-family: 'Raleway', 'HelveticaNeue', 'Arial', sans-serif;
@@ -23,6 +39,8 @@ body {
     padding-bottom: 3rem;
     border-radius: 10px;
 }
+
+hr
 
 .title {
     padding-top: auto;
@@ -52,14 +70,15 @@ header {
   
 .name {
     font-size: 4.0rem;
-    font-family: 'Nothing You Could Do', 'HelveticaNeue', sans-serif;
+    font-family: 'Chunk', 'HelveticaNeue', sans-serif;
     color: white;
     
 }
 
 .tagline {
-    font-family: 'Raleway', 'HelveticaNeue', 'Arial', sans-serif;
     color: #C0C0C1;
+    font-family: 'Quicksand', 'Raleway', 'HelveticaNeue', 'Arial', sans-serif;
+    font-size: 2.0rem;
 }
 
 /* Navigation */
@@ -75,18 +94,20 @@ button {
 
 /* About Me */
 p.summary {
-    text-align: justify;
     margin-left: 1rem;
     margin-right: 1rem;
+    text-align: justify;
+    font-size: 2.0rem;
 }
 
+
 img.headshot2 {
-    width: 50%;
+    width: 75%;
     border-radius: 50%;
     float: none;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
+
     -webkit-box-shadow: 0 8px 6px -6px black;
 	   -moz-box-shadow: 0 8px 6px -6px black;
 	        box-shadow: 0 8px 6px -6px black;  
@@ -94,7 +115,20 @@ img.headshot2 {
 
 /* For Mobile*/
 @media (max-width: 400px) {
+  p.summary {
+    font-size: 1.5rem;
+}
+  
   img.headshot2 {
+    width: 25%;
+    margin-top: 1.0em;
+    margin-bottom: 1.0em;    
+  }
+}
+
+@media (max-width: 768px) {
+  img.headshot2 {
+    width: 50%;
     margin-top: 1.0em;
     margin-bottom: 1.0em;    
   }
@@ -104,6 +138,8 @@ img.headshot2 {
 /* Projects */
 div.thumbnail img {
     min-height: 15rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 
 }
 
