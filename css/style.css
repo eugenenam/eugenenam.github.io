@@ -47,9 +47,9 @@ body {
     padding-bottom: auto;
 }
 
-/* Headshot */
-img.headshot1 {
-    width: 25%;
+/* HEADSHOT */
+ img.headshot1 {
+    width: 50%;
     border-radius: 50%;
     padding: 0px;
     float: none;
@@ -62,12 +62,20 @@ img.headshot1 {
 	        box-shadow: 0 8px 6px -6px black;  
 }
 
-
-
-
+/* HEADER */
 header {
     text-align: center;
 }
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+  header {
+    text-align: left;
+  }  
+}
+
+
 
 
 .name {
@@ -86,6 +94,12 @@ header {
 /* Navigation */
 nav {
     text-align: center;
+}
+
+@media only screen and (min-width : 768px) {
+  nav {
+    text-align: left;
+  }  
 }
 
 button {
@@ -208,17 +222,10 @@ ul.contacts li.email a:hover {
 }
 
 
- /* Larger than mobile */
-@media (max-width: 400px) {
-  p.copyright {text-align: center;}
-  ul.contacts {
-    text-align: center;
-    padding-left: 0px;
-  }
-}
 
-    /* Larger than phablet */
-@media (max-width: 550px) {
+
+/* Larger than tablet */
+@media (max-width: 767px) {
   p.copyright {text-align: center;}
   ul.contacts {text-align: center;}
 }
@@ -235,6 +242,31 @@ ul.contacts li.email a:hover {
   top:16px;
   z-index: 10000;
 }
+
+
+
+@media only screen and (max-width : 320px){ 
+}
+
+/* Extra Small Devices, Phones */ 
+    @media only screen and (min-width : 480px) {
+
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (min-width : 768px) {
+
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+
+    }
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
+
+    }
 
 
 /* Credit Attributions */
