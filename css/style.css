@@ -25,10 +25,9 @@
 }
 
 
-
-
 body {
     font-family: 'Raleway', 'HelveticaNeue', 'Arial', sans-serif;
+    background: #FFFFFD;
 }
 
 .container {
@@ -52,7 +51,7 @@ hr
 
 /* Headshot */
 img.headshot1 {
-    width: 50%;
+    width: 25%;
     border-radius: 50%;
     padding: 0px;
     float: none;
@@ -74,7 +73,7 @@ header {
 .name {
     font-size: 4.0rem;
     font-family: 'Chunk', 'HelveticaNeue', sans-serif;
-    color: white;
+    color: #FFFFFD;
     
 }
 
@@ -165,6 +164,7 @@ p.copyright {
 ul.contacts {
     text-align: right;
     vertical-align: top;
+    padding-left: 0px;
 }
 
 ul.contacts li {
