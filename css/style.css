@@ -211,7 +211,10 @@ ul.contacts li.email a:hover {
  /* Larger than mobile */
 @media (max-width: 400px) {
   p.copyright {text-align: center;}
-  ul.contacts {text-align: center;}
+  ul.contacts {
+    text-align: center;
+    padding-left: 0px;
+  }
 }
 
     /* Larger than phablet */
