@@ -24,6 +24,9 @@
     font-style: normal;
 }
 
+
+
+
 body {
     font-family: 'Raleway', 'HelveticaNeue', 'Arial', sans-serif;
 }
@@ -49,7 +52,7 @@ hr
 
 /* Headshots*/
 img.headshot1 {
-    width: 25%;
+    width: 50%;
     border-radius: 50%;
     padding: 0px;
     float: none;
@@ -65,7 +68,7 @@ img.headshot1 {
 
 /* Header */
 header {
-    text-align: center;
+    text-align: left;
 }
   
 .name {
