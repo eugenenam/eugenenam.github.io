@@ -118,6 +118,30 @@ nav {
   }  
 }
 
+#aboutme:before { 
+    display: block; 
+ 	  content: " "; 
+  	height: 75px; /* height of fixed nav bar */
+    margin-top: -75px; /* Give negative margin of your fixed element */  	
+    visibility: hidden; 
+}
+
+#projects:before { 
+    display: block; 
+ 	  content: " "; 
+  	height: 75px; /* height of fixed nav bar */
+    margin-top: -75px; /* Give negative margin of your fixed element */  	
+    visibility: hidden; 
+}
+
+#resume:before { 
+    display: block; 
+ 	  content: " "; 
+  	height: 75px; /* height of fixed nav bar */
+    margin-top: -75px; /* Give negative margin of your fixed element */  	
+    visibility: hidden; 
+}
+
 
 /* About Me */
 p.summary {
@@ -241,18 +265,6 @@ ul.contacts li.email a:hover {
   ul.contacts {text-align: center;}
 }
 
-
-#navigation{
-  top:120px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#navigation.fixed{
-  position:fixed;
-  top:16px;
-  z-index: 10000;
-}
 
 
 
