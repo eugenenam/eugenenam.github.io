@@ -7,6 +7,10 @@ body {
 }
 
 /* NAVIGATION */
+.minilogo {
+  max-height: 3rem;
+}
+
 
 
 .logo {
@@ -88,7 +92,11 @@ div.burgers {
 }
 
 
-/* OUR MISSION */
+/* OUR FRIENDS */
+
+
+
+/* LOCATION */
 
 
 /* TALK TO US SECTION */
