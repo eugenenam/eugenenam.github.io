@@ -28,6 +28,8 @@
 body {
     font-family: 'Raleway', 'HelveticaNeue', 'Arial', sans-serif;
     background: #FFFFFD;
+    padding-top: 70px;
+
 }
 
 .container {
@@ -35,7 +37,7 @@ body {
     margin-bottom: 1rem;
 }
 
-.tile1 {
+.tile {
     background-color: #303235;
     padding-top: 3rem;
     padding-bottom: 3rem;
@@ -114,11 +116,6 @@ nav {
   nav {
     text-align: center;
   }  
-}
-
-button {
-    border: none;
-    width: 10rem;
 }
 
 
