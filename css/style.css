@@ -335,6 +335,12 @@ p.resume {
     width: 100% auto;
   }
 
+.banner4 {
+    padding: 100px 0;
+    background: url(../images/bgrd/DeathtoStock_Medium11v.2.jpg) no-repeat center center;
+    background-size: cover;
+    width: 100% auto;
+  }
 
 /* Footer */
 p.copyright {
