@@ -1,28 +1,14 @@
-/* Handles the page being scrolled by ensuring the navigation is always in
- * view.
- */
-function handleScroll(){
-
-  // check that this is a relatively modern browser
-  if (window.XMLHttpRequest){
-
-    // determine the distance scrolled down the page
-    var offset = window.pageYOffset
-               ? window.pageYOffset
-               : document.documentElement.scrollTop;
-
-    // set the appropriate class on the navigation
-    document.getElementById('navigation').className =
-        (offset > 475 ? 'fixed' : '');
-
-  }
-
-}
-
-// add the scroll event listener
-if (window.addEventListener){
-  window.addEventListener('scroll', handleScroll, false);
-}else{
-  window.attachEvent('onscroll', handleScroll);
-}
-
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
