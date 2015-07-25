@@ -14,8 +14,8 @@ body {
 a.offset:before { 
     display: block; 
  	  content: " "; 
-  	height: 200px; /* height of fixed nav bar */
-    margin-top: -10px; /* Give negative margin of your fixed element */  	
+  	height: 70px; /* height of fixed nav bar */
+    margin-top: -70px; /* Give negative margin of your fixed element */  	
     visibility: hidden; 
 }
 
