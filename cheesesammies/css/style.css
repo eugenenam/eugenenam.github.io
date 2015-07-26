@@ -12,11 +12,35 @@ p {
 }
 
 /* NAVIGATION */
-a.offset:before { 
+#aboutus:before { 
     display: block; 
  	  content: " "; 
-  	height: 70px; /* height of fixed nav bar */
-    margin-top: -70px; /* Give negative margin of your fixed element */  	
+  	height: 75px; /* height of fixed nav bar */
+    margin-top: -75px; /* Give negative margin of your fixed element */  	
+    visibility: hidden; 
+}
+
+#locations:before { 
+    display: block; 
+ 	  content: " "; 
+  	height: 75px; /* height of fixed nav bar */
+    margin-top: -75px; /* Give negative margin of your fixed element */  	
+    visibility: hidden; 
+}
+
+#menu:before { 
+    display: block; 
+ 	  content: " "; 
+  	height: 75px; /* height of fixed nav bar */
+    margin-top: -75px; /* Give negative margin of your fixed element */  	
+    visibility: hidden; 
+}
+
+#contactus:before { 
+    display: block; 
+ 	  content: " "; 
+  	height: 75px; /* height of fixed nav bar */
+    margin-top: -75px; /* Give negative margin of your fixed element */  	
     visibility: hidden; 
 }
 
@@ -40,17 +64,32 @@ a.offset:before {
 }
 
 .jumbotron {
-    background: url(../img/cress.jpg) center center;
+    background: url(../img/sandwich2.jpg) center center;
     background-size: cover;
     color: antiquewhite;
 }
 
+.owner_photo {
+    max-width: 100%;
+}
+
+.street_photo {
+    max-width: 100%;
+}
+
 .banner1 {
     padding: 100px 0;
-    background: url(../img/cheeses.jpg) center center;
+    background: url(../img/sandwich6.jpg) center;
+    background-size: cover;
     width: 100% auto;
 }
 
+.banner2 {
+    padding: 100px 0;
+    background: url(../img/sandwich5v.2.jpg) center;
+    background-size: cover;
+    width: 100% auto;
+}
 
 /* TILES */
 #tiles {
