@@ -1,4 +1,4 @@
-/* Smooth Scrolling JQuery Script */
+// Smooth Scrolling JQuery Script
 
 $(function() {
   $('a[href*=#]:not([href=#])').click(function() {
@@ -14,3 +14,12 @@ $(function() {
     }
   });
 });
+
+
+// PopUp Modal for Subsciption
+$(document).ready(function() {
+     if ($.cookie(‘pop’) == null) {
+         $(‘#myModal’).modal(‘show’);
+         $.cookie(‘pop’, ’7′);
+     }
+ });

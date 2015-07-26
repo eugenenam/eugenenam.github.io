@@ -157,7 +157,9 @@ div.burgers {
 
 
 /* LOCATION */
-
+.location tr {
+    text-align: left;
+}
 
 
 /* CONTACT US SECTION */

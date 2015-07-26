@@ -66,8 +66,8 @@
   
     <div class="jumbotron">
       <div class="container">
-        <h1>They Call me Cheesy!</h1>
-        <p>Boston's First Farm-to-Truck Foodtruck. Comfort Food made right</p>
+        <h1>They Call Me Cheesy!</h1>
+        <p>Boston's First Farm-to-Truck Foodtruck. Comfort Food made right.</p>
         <p><a class="btn btn-primary btn-lg" href="#" role="button">Visit our Blog!</a></p>
       </div>
     </div>
@@ -114,16 +114,46 @@
               <br class="hidden-md hidden-lg">
               <p>Cheese Sammies' Truck location rotates daily and is subject to change due to street conditions.  Check our website or Twitter feed daily to find our truck.
               </p>
-                
-              <ul class="list-unstyled">
-                <li>Mondays: Downtown - City Hall Plaza, Fisher Park</li>
-                <li>Tuesdays & Thursdays: South End - Harrison Ave and East Concord St, by BMC</li>
-                <li>Wednesdays & Fridays: Back Bay - Trinity Place</li>
-                <li>Saturdays: Dudley Square at Dudley street</li>
-              </ul>
-              </p>
+
+              <table class="table table-bordered table-responsive location">
+              <tr>
+                <th>Day of the Week</th>
+                <th>Location</th> 
+              </tr>
+              <tr> 
+                <td>Monday</td>
+                <td>Downtown - City Hall Plaza, Fisher Park</td>
+              </tr>
+              <tr> 
+                <td>Tuesday</td>
+                <td>South End - Harrison Ave and East Concord St, by BMC</td>
+              </tr>
+              <tr> 
+                <td>Wednesday</td>
+                <td>Back Bay - Trinity Place</td>
+              <tr>
+                <td>Thursday</td>
+                <td>South End - Harrison Ave and East Concord St, by BMC</td>
+              </tr>
+              <tr> 
+                <td>Friday</td>
+                <td>Back Bay - Trinity Place</td>
+              </tr>
+              <tr> 
+                <td>Saturday</td>
+                <td>Dudley Square at Dudley street</td>
+              </tr>
+              <tr> 
+                <td>Sunday</td>
+                <td>Closed</td>
+              </tr>
+
+            </table>
+            
+            
             </div>
           </div>
+  
         </div>
       </div>  
     </div> <!-- Close Container -->
@@ -261,7 +291,7 @@
       <div class="row">
         <div class="col-md-12">  
           <div class="copyright">
-            <p>&copy; Cheese Sammies, LLC 2015</p>
+            <p>&copy; Copyright Info 2015</p>
             <a href="" alt="Attribution">Credit</a>
           </div>
         </div> <!-- End of Columns class -->
@@ -269,9 +299,49 @@
 
     </div> <!-- End of Container class -->
   </footer>
-          
+
+  
+  
+<!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title" id="myModalLabel">Subscription Form Demo</h4>
+ 
+          <p>This is Bootstrap Modal popup example.</p>
+        </div>
+      
+        <div class="modal-body">
+       
+          <!--End mc_embed_signup-->
+ 
+   <!-- Begin MailChimp Signup Form -->
+<form class="form-horizontal" role="form">
+  <div class="form-group">
+    <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+    <div class="col-sm-10">
+    <input type="email" value="" name="EMAIL" class="required email form-control" id="mce-EMAIL"/>
+    </div>
+     </div>
+    <div id="mce-responses" class="clear">
+        <div class="response" id="mce-error-response" style="display:none"></div>
+        <div class="response" id="mce-success-response" style="display:none"></div>
+    </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;"><input type="text" name="b_9e279011b21a23e1aed5e4868_cca4394bc9" value=""/></div>
+    <div class="form-group remove-bottom">
+    <div class="col-sm-offset-2 col-sm-10">
+    <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-default"/>
+    </div>
+  </div>
+</form>  
+  
+  
 </body>
   
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.0/jquery.cookie.min.js">
+</script>
     <script src="js/custom.js"></script>
 </html>
