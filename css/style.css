@@ -315,29 +315,29 @@ p.resume {
 
 /* Banners */
 .banner1 {
-    padding: 100px 0;
+    padding: 125px 0;
     background: url(../images/bgrd/DeathtoStock_Medium2.jpg) no-repeat center center;
     background-size: cover;
     width: 100% auto;
   }
 
 .banner2 {
-    padding: 100px 0;
-    background: url(../images/bgrd/DeathtoStock_medium11v.2.jpg) no-repeat center center;
+    padding: 125px 0;
+    background: url(../images/bgrd/DeathtoStock_Medium11v.2.jpg) no-repeat center center;
     background-size: cover;
     width: 100% auto;
   }
 
 .banner3 {
-    padding: 100px 0;
-    background: url(../images/bgrd/DeathtoStock_Medium6.jpg) no-repeat center center;
+    padding: 125px 0;
+    background: url(../images/bgrd/coffeebeans.jpg) no-repeat center center;
     background-size: cover;
     width: 100% auto;
   }
 
 .banner4 {
-    padding: 100px 0;
-    background: url(../images/bgrd/DeathtoStock_Medium11v.2.jpg) no-repeat center center;
+    padding: 125px 0;
+    background: url(../images/bgrd/DeathtoStock_Medium12.jpg) no-repeat center center;
     background-size: cover;
     width: 100% auto;
   }
