@@ -1,0 +1,145 @@
+@charset "utf-8";
+
+body {
+    padding-top: 70px;
+    background-image: url(../img/backgrounds/food/food2.png);
+    background-attachment: fixed;
+    text-align: justify;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+/* NAVIGATION */
+a.offset:before { 
+    display: block; 
+ 	  content: " "; 
+  	height: 70px; /* height of fixed nav bar */
+    margin-top: -70px; /* Give negative margin of your fixed element */  	
+    visibility: hidden; 
+}
+
+
+/* HEADER */
+.logo {
+    max-width: 100%;
+    width: auto\9; /* ie8 */
+}
+
+#tagline{
+    font-family: "Alfa Slab One", "Helvetica-Neue", "Helvetica", "Arial", cursive;
+    vertical-align: bottom;
+}
+
+
+
+/* BANNERS */
+.main_banner {
+    max-width: 100%;
+}
+
+.jumbotron {
+    background: url(../img/cress.jpg) center center;
+    background-size: cover;
+    color: antiquewhite;
+}
+
+.banner1 {
+    padding: 100px 0;
+    background: url(../img/cheeses.jpg) center center;
+    width: 100% auto;
+}
+
+
+/* TILES */
+#tiles {
+    padding: 1.5rem;
+    background-color: #BB4249;
+    -webkit-box-shadow: 8px 8px 6px -6px #BB4249;
+       -moz-box-shadow: 8px 8px 6px -6px #BB4249;
+            box-shadow: 8px 8px 6px -6px #BB4249;
+
+    color: #424958;
+    border-radius: 6px;
+}
+
+#section_title {
+    font-family: "Roboto", "Helvetica-Neue", "Helvetica", "Arial", cursive;
+
+
+}
+
+/* ABOUT US */
+#aboutus {
+    font-family: ;
+    font-size:;
+}
+
+
+/* MENU SECTION */
+h5.subsection {
+    font-family: "Raleway", "Helvetica Neue",  "Helvetica", "Arial", sans-serif;
+}
+
+i.quote {
+    font-weight: 300;
+    font-size: 15px;
+}
+
+ul.food_drinks li {
+    list-style-type: none; 
+}
+
+div.appetizers {
+    background: none;
+    margin-left: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+div.beverages {
+    background: none;
+    margin-right: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+div.burgers {
+    background: none;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 1rem;
+}
+
+
+/* OUR FRIENDS */
+
+
+
+/* LOCATION */
+
+
+
+/* CONTACT US SECTION */
+ul.contacts {
+    padding-left: 0px;
+}
+
+ul.contacts li {
+    list-style-type: none; 
+}
+
+/* FOOTER */
+footer {
+    color: #424958;
+}
+
+.copyright {
+    text-align: center;
+}
+
+
+
+/* Credit Attributions */
+/* Background pattern from subtlepatterns.com */
