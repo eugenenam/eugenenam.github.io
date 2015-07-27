@@ -342,14 +342,20 @@ p.resume {
     width: 100% auto;
   }
 
+.banner5 {
+    padding: 125px 0;
+    background: url(../images/bgrd/U68NITW3EI.jpg) no-repeat center center;
+    background-size: cover;
+    width: 100% auto;
+  }
+
 /* Footer */
 p.copyright {
     text-align: left; 
 }
 
 ul.contacts {
-    text-align: right;
-    vertical-align: top;
+    text-align: center;
     padding-left: 0px;
 }
 
@@ -394,9 +400,7 @@ ul.contacts li.email a:hover {
 }
 
 
-
-
-/* Larger than tablet */
+/* Tablet or smaller */
 @media (max-width: 767px) {
   p.copyright {text-align: center;}
   ul.contacts {text-align: center;}
