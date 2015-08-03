@@ -15,11 +15,3 @@ $(function() {
   });
 });
 
-
-// PopUp Modal for Subsciption
-$(document).ready(function() {
-     if ($.cookie(‘pop’) == null) {
-         $(‘#myModal’).modal(‘show’);
-         $.cookie(‘pop’, ’7′);
-     }
- });

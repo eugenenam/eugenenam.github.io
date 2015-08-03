@@ -15,6 +15,8 @@ $(function() {
   });
 });
 
+
+
 // Parallax 
 $(document).ready(function(){
    // cache the window object
