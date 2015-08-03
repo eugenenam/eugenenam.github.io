@@ -320,6 +320,9 @@ div.caption p {
     text-align: justify;
 }
 
+iframe {
+    margin: auto;
+}
 
 /* Resume */
 p.resume {
