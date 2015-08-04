@@ -239,7 +239,7 @@ fieldset[disabled] .navbar-custom .btn-link:focus {
 
 
 
-
+/* Nav Offset */
 #aboutme:before { 
     display: block; 
  	  content: " "; 
@@ -307,6 +307,15 @@ img.headshot2 {
   }
 }
 
+/*Resume PDF*/
+.resume {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 1rem;
+    text-align: center;
+}
+
 
 /* Projects */
 div.thumbnail img {
@@ -332,35 +341,35 @@ p.resume {
 
 /* Banners */
 .banner1 {
-    padding: 125px 0;
-    background: url(../images/bgrd/DeathtoStock_Medium2.jpg) no-repeat center center;
+    padding: 150px 0;
+    background: url(../images/bgrd/coffee-apple-iphone-laptop.jpg) no-repeat center center;
     background-size: cover;
     width: 100% auto;
   }
 
 .banner2 {
-    padding: 125px 0;
+    padding: 150px 0;
     background: url(../images/bgrd/DeathtoStock_Medium11.jpg) no-repeat center center;
     background-size: cover;
     width: 100% auto;
   }
 
 .banner3 {
-    padding: 125px 0;
+    padding: 150px 0;
     background: url(../images/bgrd/coffeebeans.jpg) no-repeat center center;
     background-size: cover;
     width: 100% auto;
   }
 
 .banner4 {
-    padding: 125px 0;
+    padding: 150px 0;
     background: url(../images/bgrd/DeathtoStock_Medium12.jpg) no-repeat center center;
     background-size: cover;
     width: 100% auto;
   }
 
 .banner5 {
-    padding: 125px 0;
+    padding: 150px 0;
     background: url(../images/bgrd/U68NITW3EI.jpg) no-repeat center center;
     background-size: cover;
     width: 100% auto;
