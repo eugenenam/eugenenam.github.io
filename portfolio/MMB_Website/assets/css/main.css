@@ -1,0 +1,417 @@
+/* Import Open Sans Font from Google - Same as current MMB font*/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300);
+
+
+/* Main Body Color and Fonts Family*/
+
+body {
+  	background-color: #ffffff;
+  	font-family: 'Open Sans', sans-serif;
+    color: #555;
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Titles CSS */
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    color: #333;
+}
+
+h1 {
+	font-size: 35px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+/* Paragraph & Typographic */
+p {
+    line-height: 28px;
+    margin-bottom: 25px;
+    font-size: 16px;
+}
+
+/* Alignment */
+.centered {
+    text-align: center;
+}
+
+.notifications {
+    margin-top: 100px;
+    z-index: 1;
+}
+
+.neighborhood {
+    margin-top: 50px;
+
+}
+
+/* Links */
+a {
+    color: #1abc9c;
+    word-wrap: break-word;
+
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+a:hover,
+a:focus {
+    color: #7b7b7b;
+    text-decoration: none;
+    outline: 0;
+}
+
+a:before,
+a:after {
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+ hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+
+.navbar {
+	text-transform: uppercase;
+	margin-bottom: 0px;
+}
+
+.navbar-inverse {
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+
+.navbar-inverse {
+	background-color: #2f2f2f;
+	border-color: #16a085;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+	color: white;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+	z-index: 2;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.navbar-brand {
+	font-weight: 700;
+	font-size: 20px;
+	letter-spacing: 2px;
+}
+
+.navbar-inverse .navbar-brand {
+	color: white;
+}
+
+.navbar-inverse .navbar-toggle {
+	border-color: transparent;
+}
+
+.progress-bar-theme {
+  background-color: #1abc9c;
+}
+
+a > img {
+  max-width: 50%;
+}
+
+/* Helpers */
+
+.mt {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.pt {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+
+/* +++++ SECTIONS +++++ */
+
+/* Hero Page Section */
+#hero {
+	padding-top: 70px;
+	padding-bottom: 70px;
+	background-color: #f2f2f2;
+  text-align: middle;
+  height: 55rem;
+}
+
+/* Notification Alert Section */
+#alert {
+  background-image: url(../img/alertsbanner_v2.png);
+  background-size: cover;
+  width: 100% auto;
+}
+
+#alert h1 {
+font-weight: 600;
+}
+
+#alert h3 {
+font-weight: 600;
+}
+
+#alert h4 {
+font-weight: 600;
+}
+
+.alert_h1 {
+  color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+.alert_h3 {
+  color: white;
+}
+
+.alert_ul {
+  color: white;
+  list-style: none;
+
+}
+
+.alert_phone1 {
+  max-width: 40rem;
+  height: auto;
+  z-index: 1;
+  margin-top: -80px;
+}
+
+.alert_phone2 {
+  max-width: 40rem;
+  height: auto;
+  z-index: 1;
+  margin-top: 0px;
+}
+
+.blank {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+
+/* Neighborhood Map Section */
+#neighborhood_maps {
+  padding: 50px auto;
+  background-image: url(../img/mapbanner_v2.png);
+  background-size: cover;
+  width: 100% auto;
+  height: 50rem;
+}
+
+#neighborhood_maps h1 {
+font-weight: 600;
+}
+
+#neighborhood_maps h3 {
+font-weight: 600;
+}
+
+.maps_h1 {
+  color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+.maps_h3 {
+  color: white;
+}
+
+
+/* Other Features Section */
+.other_icons {
+  max-width: 10rem;
+}
+
+.other_screens {
+  max-width: 25rem;
+  box-shadow: 5px 5px 5px #888888;
+}
+
+
+/* Press Section */
+.press_logo1 {
+  max-width: 50%;
+  opacity: 0.5;
+}
+
+.press_logo2 {
+  max-width: 25%;
+  opacity: 0.5;
+}
+
+
+.img-zoom {
+    width: 310px;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+}
+ 
+.transition {
+    -webkit-transform: scale(1.25); 
+    -moz-transform: scale(1.25);
+    -o-transform: scale(1.25);
+    transform: scale(1.25);
+}
+
+/* Contact Section */
+
+.img-responsive {
+  margin: 0 auto;
+}
+
+
+/* Footer Section */
+#footer {
+	background-color: #2f2f2f;
+	padding-top: 25px;
+	padding-bottom: 25px; 
+}
+
+#footer p {
+	color: white;
+}
+
+#footer h4 {
+	color: white;
+	text-transform: uppercase;
+	padding-bottom: 20px;
+}
+
+
+
+/* +++++ Color Wraps / Blog Page +++++ */
+
+#grey {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	background-color: #f2f2f2;
+}
+
+#white {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	background-color: #ffffff;
+}
+
+
+
+
+
+/* SOCIAL MEDIA ICONS */
+@font-face {
+    font-family: 'si';
+    src: url("assets/social/socicon.eot");
+    src: url("assets/social/socicon.eot?#iefix") format("embedded-opentype"),
+         url("assets/social/socicon.woff") format("woff"),
+         url("assets/social/socicon.ttf") format("truetype"),
+         url("assets/social/socicon.svg#icomoonregular") format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+ 
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+        font-family:si;
+        src: url('assets/social/socicon.svg') format(svg);
+    }
+}
+
+.soc {
+    overflow:hidden;
+    margin:0; 
+    padding:0;
+    list-style:none;
+    vertical-align: middle;
+}
+
+.soc li {
+    display:inline-block;
+    *display:inline;
+    zoom:1;
+}
+
+.soc li a {
+    font-family:si!important;
+    font-style:normal;
+    font-weight:400;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    box-sizing:border-box;
+
+    -o-transition:.1s;
+    -ms-transition:.1s;
+    -moz-transition:.1s;
+    -webkit-transition:.1s;
+    transition:.1s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+
+    overflow:hidden;
+    text-decoration:none;
+    text-align:center;
+    display:block;
+    position: relative;
+    z-index: 1;
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
+    font-size: 35px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    margin-right: 10px;
+    color: #00C2B2;
+    background-color: #2f2f2f;
+}
+
+
+.soc-icon-last{
+    margin:0 !important;
+}
+
+.soc-twitter:before {
+    content:'a';
+}
+.soc-facebook:before {
+    content:'b';
+}
+.soc-google:before {
+    content:'c';
+}
+
+
+
+
+
+
