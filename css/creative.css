@@ -11,7 +11,7 @@ body {
 }
 
 body {
-    font-family: Merriweather,'Helvetica Neue',Arial,sans-serif;
+    font-family: 'Lato','Work Sans','Helvetica Neue','Arial',sans-serif;
 }
 
 hr {
@@ -49,7 +49,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-family: 'Lato','Work Sans','Helvetica Neue','Arial',sans-serif;
 }
 
 p {
@@ -203,7 +203,7 @@ header .header-content {
 header .header-content .header-content-inner h1 {
     margin-top: 0;
     margin-bottom: 0;
-    text-transform: uppercase;
+    text-transform: lowercase;
     font-weight: 700;
 }
 
@@ -299,7 +299,7 @@ header .header-content .header-content-inner p {
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
     padding: 0 15px;
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-family: 'Lato','Work Sans','Helvetica Neue','Arial',sans-serif;
 }
 
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
@@ -449,7 +449,7 @@ fieldset[disabled] .btn-primary.active {
     border: 0;
     border-radius: 300px;
     text-transform: uppercase;
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-family: 'Lato','Work Sans','Helvetica Neue','Arial',sans-serif;
     font-weight: 700;
 }
 
@@ -494,7 +494,21 @@ body {
     margin-right: auto;
     -webkit-box-shadow: 0 8px 6px -6px black;
 	   -moz-box-shadow: 0 8px 6px -6px black;
-	        box-shadow: 0 8px 6px -6px black;  
+	        box-shadow: 0 8px 6px -6px black;
+}
+
+img.headshot2 {
+   width: 35%;
+   border-radius: 50%;
+   padding: 0px;
+   float: none;
+   display: block;
+   text-align: center;
+   margin-left: auto;
+   margin-right: auto;
+   -webkit-box-shadow: 0 8px 6px -6px black;
+    -moz-box-shadow: 0 8px 6px -6px black;
+         box-shadow: 0 8px 6px -6px black;
 }
 
 a.social {
@@ -503,7 +517,7 @@ a.social {
     -moz-transition: all .35s;
     transition: all .35s;
   a:hover {
-  
+
   }
 }
 
