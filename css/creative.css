@@ -8,12 +8,14 @@ html,
 body {
     width: 100%;
     height: 100%;
-}
-
-body {
     font-family: 'Lato','Work Sans','Helvetica Neue','Arial',sans-serif;
 }
 
+/*
+body {
+    font-family: 'Lato','Work Sans','Helvetica Neue','Arial',sans-serif;
+}
+*/
 hr {
     max-width: 50px;
     border-color: #f05f40;
