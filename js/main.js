@@ -5,8 +5,7 @@
 
 const MEDIUM_RSS_API =
   'https://api.rss2json.com/v1/api.json?rss_url=' +
-  encodeURIComponent('https://medium.com/feed/@iamNamster') +
-  '&count=3';
+  encodeURIComponent('https://medium.com/feed/@iamNamster');
 
 /* ------------------------------------------------
    Theme
