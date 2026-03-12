@@ -439,13 +439,6 @@ p { line-height: 1.7; }
 /* ------------------------------------------------
    9. About
    ------------------------------------------------ */
-.about-layout {
-  display: grid;
-  grid-template-columns: 1fr 240px;
-  gap: 56px;
-  align-items: start;
-}
-
 .about-text {
   display: flex;
   flex-direction: column;
@@ -456,37 +449,6 @@ p { line-height: 1.7; }
   font-size: 1.05rem;
   color: var(--text-secondary);
   line-height: 1.8;
-}
-
-.about-stats {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 14px;
-}
-
-.stat-card {
-  padding: 18px 14px;
-  background-color: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  text-align: center;
-  box-shadow: var(--shadow-sm);
-}
-
-.stat-number {
-  font-size: 1.7rem;
-  font-weight: 800;
-  color: var(--text);
-  letter-spacing: -0.03em;
-  line-height: 1;
-  margin-bottom: 6px;
-}
-
-.stat-label {
-  font-size: 0.78rem;
-  color: var(--text-muted);
-  line-height: 1.4;
-  font-weight: 500;
 }
 
 /* ------------------------------------------------
@@ -879,8 +841,6 @@ footer a:hover { color: var(--text); }
   .hero-cta           { justify-content: center; }
   .status-badge       { margin: 0 auto; }
 
-  .about-layout       { grid-template-columns: 1fr; }
-  .about-stats        { grid-template-columns: repeat(4, 1fr); }
 
   .projects-grid      { grid-template-columns: 1fr; }
   .posts-grid         { grid-template-columns: 1fr; }
@@ -891,7 +851,6 @@ footer a:hover { color: var(--text); }
    ------------------------------------------------ */
 @media (max-width: 600px) {
   .hero-photo img     { width: 160px; height: 160px; }
-  .about-stats        { grid-template-columns: 1fr 1fr; }
   .hero-tagline br    { display: none; }
 }
 
