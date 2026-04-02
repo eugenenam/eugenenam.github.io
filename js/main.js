@@ -3,9 +3,7 @@
    main.js
    ================================================ */
 
-const MEDIUM_RSS_API =
-  'https://api.rss2json.com/v1/api.json?rss_url=' +
-  encodeURIComponent('https://medium.com/feed/@iamNamster');
+const MEDIUM_POSTS_URL = '/medium-posts.json';
 
 /* ------------------------------------------------
    Theme
@@ -104,15 +102,34 @@ function formatDate(dateStr) {
   });
 }
 
+// Escape special HTML characters to prevent XSS when interpolating into innerHTML
+function escapeHtml(str) {
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
+
+// Only allow https links to guard against javascript: URLs
+function safeUrl(url) {
+  try {
+    const parsed = new URL(url);
+    return parsed.protocol === 'https:' ? url : '#';
+  } catch {
+    return '#';
+  }
+}
+
 function renderPosts(items) {
   const grid = document.getElementById('postsGrid');
   grid.innerHTML = items.map(post => {
     const excerpt = stripHtml(post.description).replace(/\s+/g, ' ').trim().slice(0, 160) + '…';
     return `
-      <a href="${post.link}" target="_blank" rel="noopener noreferrer" class="post-card">
-        <span class="post-date">${formatDate(post.pubDate)}</span>
-        <span class="post-title">${post.title}</span>
-        <span class="post-excerpt">${excerpt}</span>
+      <a href="${safeUrl(post.link)}" target="_blank" rel="noopener noreferrer" class="post-card">
+        <span class="post-date">${escapeHtml(formatDate(post.pubDate))}</span>
+        <span class="post-title">${escapeHtml(post.title)}</span>
+        <span class="post-excerpt">${escapeHtml(excerpt)}</span>
         <span class="post-read-more">Read on Medium ↗</span>
       </a>`;
   }).join('');
@@ -131,11 +148,11 @@ function renderFallback() {
 
 async function loadMediumPosts() {
   try {
-    const res  = await fetch(MEDIUM_RSS_API);
+    const res  = await fetch(MEDIUM_POSTS_URL);
     if (!res.ok) throw new Error('fetch failed');
-    const data = await res.json();
-    if (data.status !== 'ok' || !data.items?.length) throw new Error('no items');
-    renderPosts(data.items.slice(0, 3));
+    const items = await res.json();
+    if (!items?.length) throw new Error('no items');
+    renderPosts(items.slice(0, 3));
   } catch {
     renderFallback();
   }

@@ -1,0 +1,70 @@
+name: Fetch Medium Posts
+
+on:
+  push:
+    branches: [master]
+  schedule:
+    # Runs daily at 8am UTC
+    - cron: '0 8 * * *'
+  workflow_dispatch:
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch and parse Medium RSS feed
+        run: |
+          python3 - <<'EOF'
+          import urllib.request, xml.etree.ElementTree as ET, json, re
+
+          url = 'https://medium.com/feed/@iamNamster'
+          req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+          with urllib.request.urlopen(req, timeout=15) as r:
+              xml_content = r.read().decode('utf-8')
+
+          root = ET.fromstring(xml_content)
+          items = []
+          for el in root.findall('.//item')[:5]:
+              # <link> in RSS is a text node after the tag, not an attribute
+              link_el = el.find('link')
+              link = ''
+              if link_el is not None:
+                  # The link text is sometimes a sibling text node
+                  link = (link_el.text or '').strip()
+                  if not link and link_el.tail:
+                      link = link_el.tail.strip()
+
+              desc_el = el.find('description')
+              description = desc_el.text if desc_el is not None else ''
+
+              items.append({
+                  'title':       (el.findtext('title') or '').strip(),
+                  'link':        link,
+                  'pubDate':     (el.findtext('pubDate') or '').strip(),
+                  'description': description or '',
+              })
+
+          with open('medium-posts.json', 'w') as f:
+              json.dump(items, f, indent=2)
+
+          print(f"Wrote {len(items)} posts to medium-posts.json")
+          for p in items:
+              print(f"  {p['pubDate']} | {p['title']}")
+          EOF
+
+      - name: Commit if changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add medium-posts.json
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: update medium posts"
+            git push
+          fi
