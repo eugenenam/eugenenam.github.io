@@ -9,3 +9,7 @@ CLAUDE.md
 
 # Local dev server
 serve.js
+
+# Impeccable (per-developer files)
+.impeccable/config.local.json
+.impeccable/hook.cache.json
