@@ -1,0 +1,24 @@
+{
+  "hook": {
+    "enabled": true,
+    "limits": {
+      "maxFindings": 5,
+      "maxChars": 8000
+    }
+  },
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-11-23T22:57:16.356Z",
+        "reason": "Agent: static scan can't resolve var(--section-gap); rendered URL scan at 1440 and 390 shows 0 cramped-padding, sections have 60-100px vertical padding"
+      }
+    ]
+  }
+}

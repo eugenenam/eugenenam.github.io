@@ -34,7 +34,9 @@
   --border:          var(--gray-200);
   --text:            var(--navy-800);
   --text-secondary:  var(--gray-600);
-  --text-muted:      var(--gray-400);
+  --text-muted:      #5C6A88; /* 5.1:1 on mist; gray-400 failed at 2.3:1 */
+  --status-text:     #15803D; /* darker green so status labels pass 4.5:1 on white */
+  --selection:       var(--navy-100);
   --accent:          var(--navy-500);
   --accent-hover:    var(--navy-700);
   --accent-soft:     #EDF2FC;
@@ -66,7 +68,9 @@
   --border:          #1A2D52;
   --text:            #EEF2FA;
   --text-secondary:  #A0B3D0;
-  --text-muted:      #5A7099;
+  --text-muted:      #8296BB; /* 5.4:1 on card surface */
+  --status-text:     var(--green);
+  --selection:       var(--navy-500);
   --accent:          var(--navy-200);
   --accent-hover:    var(--white);
   --accent-soft:     #1A2D52;
@@ -106,6 +110,8 @@ img          { display: block; max-width: 100%; }
 button       { cursor: pointer; border: none; background: none; font-family: var(--font); }
 
 section[id]  { scroll-margin-top: var(--nav-height); }
+
+::selection  { background-color: var(--selection); color: var(--text); }
 
 /* ------------------------------------------------
    3. Layout
@@ -327,18 +333,6 @@ p { line-height: 1.7; }
 .section-header   { margin-bottom: 52px; }
 .section-cta      { margin-top: 48px; }
 
-.section-label {
-  display: inline-block;
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--navy-400);
-  margin-bottom: 10px;
-}
-
-[data-theme="dark"] .section-label { color: var(--navy-200); }
-
 .section-description {
   margin-top: 12px;
   color: var(--text-secondary);
@@ -552,11 +546,14 @@ p { line-height: 1.7; }
 }
 
 .timeline-bullets li::before {
-  content: '—';
+  content: '';
   position: absolute;
-  left: 0;
-  color: var(--text-muted);
-  font-size: 0.8rem;
+  left: 4px;
+  top: 0.75em;          /* roughly centered on the first line of text */
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: var(--text-muted);
 }
 
 /* ------------------------------------------------
@@ -593,7 +590,7 @@ p { line-height: 1.7; }
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--green);
+  color: var(--status-text);
 }
 
 .project-status.muted { color: var(--text-muted); }
@@ -882,14 +879,18 @@ footer a:hover { color: var(--text); }
   background: rgba(0, 0, 0, 0.72);
   backdrop-filter: blur(4px);
   opacity: 0;
+  visibility: hidden;
   pointer-events: none;
-  transition: opacity 0.2s ease;
+  /* Delay hiding until the fade-out finishes */
+  transition: opacity 0.2s ease, visibility 0s linear 0.2s;
   padding: 20px;
 }
 
 .terminal-overlay.open {
   opacity: 1;
+  visibility: visible;
   pointer-events: auto;
+  transition: opacity 0.2s ease, visibility 0s;
 }
 
 .terminal-window {

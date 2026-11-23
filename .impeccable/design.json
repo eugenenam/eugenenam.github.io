@@ -1,0 +1,537 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-23T23:01:36+00:00",
+  "title": "Design System: Eugene Nam",
+  "extensions": {
+    "colorMeta": {
+      "ledger-navy": {
+        "role": "primary",
+        "displayName": "Ledger Navy",
+        "canonical": "#0D1B35",
+        "oklch": "oklch(22.6% 0.054 262)",
+        "tonalRamp": [
+          "oklch(15% 0.015 262)",
+          "oklch(26% 0.026 262)",
+          "oklch(38% 0.037 262)",
+          "oklch(49% 0.049 262)",
+          "oklch(61% 0.049 262)",
+          "oklch(72% 0.037 262)",
+          "oklch(84% 0.026 262)",
+          "oklch(95% 0.015 262)"
+        ]
+      },
+      "ledger-navy-deep": {
+        "role": "primary",
+        "displayName": "Ledger Navy Deep",
+        "canonical": "#0A1628",
+        "oklch": "oklch(20.0% 0.040 258)",
+        "tonalRamp": [
+          "oklch(15% 0.011 258)",
+          "oklch(26% 0.019 258)",
+          "oklch(38% 0.028 258)",
+          "oklch(49% 0.036 258)",
+          "oklch(61% 0.036 258)",
+          "oklch(72% 0.028 258)",
+          "oklch(84% 0.019 258)",
+          "oklch(95% 0.011 258)"
+        ]
+      },
+      "navy-surface": {
+        "role": "neutral",
+        "displayName": "Navy Surface",
+        "canonical": "#122040",
+        "oklch": "oklch(25.1% 0.064 264)",
+        "tonalRamp": [
+          "oklch(15% 0.017 264)",
+          "oklch(26% 0.031 264)",
+          "oklch(38% 0.044 264)",
+          "oklch(49% 0.057 264)",
+          "oklch(61% 0.057 264)",
+          "oklch(72% 0.044 264)",
+          "oklch(84% 0.031 264)",
+          "oklch(95% 0.017 264)"
+        ]
+      },
+      "navy-line": {
+        "role": "neutral",
+        "displayName": "Navy Line",
+        "canonical": "#1A2D52",
+        "oklch": "oklch(30.2% 0.072 262)",
+        "tonalRamp": [
+          "oklch(15% 0.020 262)",
+          "oklch(26% 0.034 262)",
+          "oklch(38% 0.049 262)",
+          "oklch(49% 0.064 262)",
+          "oklch(61% 0.064 262)",
+          "oklch(72% 0.049 262)",
+          "oklch(84% 0.034 262)",
+          "oklch(95% 0.020 262)"
+        ]
+      },
+      "navy-accent": {
+        "role": "primary",
+        "displayName": "Navy Accent",
+        "canonical": "#1E3A6E",
+        "oklch": "oklch(35.7% 0.096 262)",
+        "tonalRamp": [
+          "oklch(15% 0.026 262)",
+          "oklch(26% 0.046 262)",
+          "oklch(38% 0.066 262)",
+          "oklch(49% 0.086 262)",
+          "oklch(61% 0.086 262)",
+          "oklch(72% 0.066 262)",
+          "oklch(84% 0.046 262)",
+          "oklch(95% 0.026 262)"
+        ]
+      },
+      "statement-blue": {
+        "role": "secondary",
+        "displayName": "Statement Blue",
+        "canonical": "#2E5491",
+        "oklch": "oklch(45.0% 0.109 259)",
+        "tonalRamp": [
+          "oklch(15% 0.030 259)",
+          "oklch(26% 0.053 259)",
+          "oklch(38% 0.075 259)",
+          "oklch(49% 0.098 259)",
+          "oklch(61% 0.098 259)",
+          "oklch(72% 0.075 259)",
+          "oklch(84% 0.053 259)",
+          "oklch(95% 0.030 259)"
+        ]
+      },
+      "statement-blue-light": {
+        "role": "secondary",
+        "displayName": "Statement Blue Light",
+        "canonical": "#7AAAE8",
+        "oklch": "oklch(72.8% 0.104 255)",
+        "tonalRamp": [
+          "oklch(15% 0.028 255)",
+          "oklch(26% 0.050 255)",
+          "oklch(38% 0.072 255)",
+          "oklch(49% 0.094 255)",
+          "oklch(61% 0.094 255)",
+          "oklch(72% 0.072 255)",
+          "oklch(84% 0.050 255)",
+          "oklch(95% 0.028 255)"
+        ]
+      },
+      "focus-blue": {
+        "role": "secondary",
+        "displayName": "Focus Blue",
+        "canonical": "#4A78C4",
+        "oklch": "oklch(57.6% 0.128 260)",
+        "tonalRamp": [
+          "oklch(15% 0.035 260)",
+          "oklch(26% 0.062 260)",
+          "oklch(38% 0.088 260)",
+          "oklch(49% 0.115 260)",
+          "oklch(61% 0.115 260)",
+          "oklch(72% 0.088 260)",
+          "oklch(84% 0.062 260)",
+          "oklch(95% 0.035 260)"
+        ]
+      },
+      "statement-wash": {
+        "role": "secondary",
+        "displayName": "Statement Wash",
+        "canonical": "#EDF2FC",
+        "oklch": "oklch(96.0% 0.014 264)",
+        "tonalRamp": [
+          "oklch(15% 0.004 264)",
+          "oklch(26% 0.007 264)",
+          "oklch(38% 0.010 264)",
+          "oklch(49% 0.013 264)",
+          "oklch(61% 0.013 264)",
+          "oklch(72% 0.010 264)",
+          "oklch(84% 0.007 264)",
+          "oklch(95% 0.004 264)"
+        ]
+      },
+      "paper-white": {
+        "role": "neutral",
+        "displayName": "Paper White",
+        "canonical": "#FFFFFF",
+        "oklch": "oklch(100.0% 0.000 90)",
+        "tonalRamp": [
+          "oklch(15% 0.000 90)",
+          "oklch(26% 0.000 90)",
+          "oklch(38% 0.000 90)",
+          "oklch(49% 0.000 90)",
+          "oklch(61% 0.000 90)",
+          "oklch(72% 0.000 90)",
+          "oklch(84% 0.000 90)",
+          "oklch(95% 0.000 90)"
+        ]
+      },
+      "mist": {
+        "role": "neutral",
+        "displayName": "Mist",
+        "canonical": "#F7F8FC",
+        "oklch": "oklch(98.0% 0.005 275)",
+        "tonalRamp": [
+          "oklch(15% 0.001 275)",
+          "oklch(26% 0.003 275)",
+          "oklch(38% 0.004 275)",
+          "oklch(49% 0.005 275)",
+          "oklch(61% 0.005 275)",
+          "oklch(72% 0.004 275)",
+          "oklch(84% 0.003 275)",
+          "oklch(95% 0.001 275)"
+        ]
+      },
+      "hairline-gray": {
+        "role": "neutral",
+        "displayName": "Hairline Gray",
+        "canonical": "#E2E6F0",
+        "oklch": "oklch(92.5% 0.014 268)",
+        "tonalRamp": [
+          "oklch(15% 0.004 268)",
+          "oklch(26% 0.007 268)",
+          "oklch(38% 0.010 268)",
+          "oklch(49% 0.013 268)",
+          "oklch(61% 0.013 268)",
+          "oklch(72% 0.010 268)",
+          "oklch(84% 0.007 268)",
+          "oklch(95% 0.004 268)"
+        ]
+      },
+      "quiet-gray": {
+        "role": "neutral",
+        "displayName": "Quiet Gray",
+        "canonical": "#5C6A88",
+        "oklch": "oklch(52.4% 0.051 265)",
+        "tonalRamp": [
+          "oklch(15% 0.014 265)",
+          "oklch(26% 0.024 265)",
+          "oklch(38% 0.035 265)",
+          "oklch(49% 0.045 265)",
+          "oklch(61% 0.045 265)",
+          "oklch(72% 0.035 265)",
+          "oklch(84% 0.024 265)",
+          "oklch(95% 0.014 265)"
+        ]
+      },
+      "slate-text": {
+        "role": "neutral",
+        "displayName": "Slate Text",
+        "canonical": "#4A5568",
+        "oklch": "oklch(44.7% 0.034 261)",
+        "tonalRamp": [
+          "oklch(15% 0.009 261)",
+          "oklch(26% 0.016 261)",
+          "oklch(38% 0.024 261)",
+          "oklch(49% 0.031 261)",
+          "oklch(61% 0.031 261)",
+          "oklch(72% 0.024 261)",
+          "oklch(84% 0.016 261)",
+          "oklch(95% 0.009 261)"
+        ]
+      },
+      "status-green": {
+        "role": "tertiary",
+        "displayName": "Status Green",
+        "canonical": "#22C55E",
+        "oklch": "oklch(72.3% 0.192 150)",
+        "tonalRamp": [
+          "oklch(15% 0.052 150)",
+          "oklch(26% 0.092 150)",
+          "oklch(38% 0.132 150)",
+          "oklch(49% 0.172 150)",
+          "oklch(61% 0.172 150)",
+          "oklch(72% 0.132 150)",
+          "oklch(84% 0.092 150)",
+          "oklch(95% 0.052 150)"
+        ]
+      },
+      "status-green-deep": {
+        "role": "tertiary",
+        "displayName": "Status Green Deep",
+        "canonical": "#15803D",
+        "oklch": "oklch(52.7% 0.137 150)",
+        "tonalRamp": [
+          "oklch(15% 0.037 150)",
+          "oklch(26% 0.066 150)",
+          "oklch(38% 0.094 150)",
+          "oklch(49% 0.123 150)",
+          "oklch(61% 0.123 150)",
+          "oklch(72% 0.094 150)",
+          "oklch(84% 0.066 150)",
+          "oklch(95% 0.037 150)"
+        ]
+      },
+      "night-text": {
+        "role": "neutral",
+        "displayName": "Night Text",
+        "canonical": "#EEF2FA",
+        "oklch": "oklch(96.0% 0.012 265)",
+        "tonalRamp": [
+          "oklch(15% 0.003 265)",
+          "oklch(26% 0.006 265)",
+          "oklch(38% 0.008 265)",
+          "oklch(49% 0.010 265)",
+          "oklch(61% 0.010 265)",
+          "oklch(72% 0.008 265)",
+          "oklch(84% 0.006 265)",
+          "oklch(95% 0.003 265)"
+        ]
+      },
+      "night-secondary": {
+        "role": "neutral",
+        "displayName": "Night Secondary",
+        "canonical": "#A0B3D0",
+        "oklch": "oklch(76.2% 0.047 259)",
+        "tonalRamp": [
+          "oklch(15% 0.013 259)",
+          "oklch(26% 0.022 259)",
+          "oklch(38% 0.032 259)",
+          "oklch(49% 0.042 259)",
+          "oklch(61% 0.042 259)",
+          "oklch(72% 0.032 259)",
+          "oklch(84% 0.022 259)",
+          "oklch(95% 0.013 259)"
+        ]
+      },
+      "night-muted": {
+        "role": "neutral",
+        "displayName": "Night Muted",
+        "canonical": "#8296BB",
+        "oklch": "oklch(67.1% 0.060 263)",
+        "tonalRamp": [
+          "oklch(15% 0.016 263)",
+          "oklch(26% 0.029 263)",
+          "oklch(38% 0.041 263)",
+          "oklch(49% 0.054 263)",
+          "oklch(61% 0.054 263)",
+          "oklch(72% 0.041 263)",
+          "oklch(84% 0.029 263)",
+          "oklch(95% 0.016 263)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "The name in the hero only."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section titles; contact headline scales larger."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Card titles and timeline company names."
+      },
+      "body-lg": {
+        "displayName": "Body Large",
+        "purpose": "About paragraphs and section descriptions."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Default paragraphs."
+      },
+      "body-sm": {
+        "displayName": "Body Small",
+        "purpose": "Card descriptions, timeline bullets, post excerpts."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Uppercase project status on cards only."
+      },
+      "mono": {
+        "displayName": "Mono",
+        "purpose": "Terminal easter egg only."
+      }
+    },
+    "shadows": [
+      {
+        "name": "resting-hairline",
+        "value": "0 1px 3px rgba(10, 22, 40, 0.08)",
+        "purpose": "Status badge and scrolled nav."
+      },
+      {
+        "name": "card-rest",
+        "value": "0 2px 8px rgba(10, 22, 40, 0.10), 0 1px 3px rgba(10, 22, 40, 0.06)",
+        "purpose": "Project and post cards at rest, mobile menu."
+      },
+      {
+        "name": "card-lift",
+        "value": "0 8px 32px rgba(10, 22, 40, 0.14)",
+        "purpose": "Card hover and the hero headshot."
+      },
+      {
+        "name": "dark-resting-hairline",
+        "value": "0 1px 3px rgba(0,0,0,0.3)",
+        "purpose": "Dark mode resting hairline."
+      },
+      {
+        "name": "dark-card-rest",
+        "value": "0 2px 8px rgba(0,0,0,0.4), 0 1px 3px rgba(0,0,0,0.2)",
+        "purpose": "Dark mode card rest."
+      },
+      {
+        "name": "dark-card-lift",
+        "value": "0 8px 32px rgba(0,0,0,0.5)",
+        "purpose": "Dark mode card lift."
+      }
+    ],
+    "motion": [
+      {
+        "name": "transition-standard",
+        "value": "0.2s ease",
+        "purpose": "Default for hover color, shadow, and lift transitions."
+      },
+      {
+        "name": "theme-fade",
+        "value": "0.3s ease",
+        "purpose": "Body background and text color when switching themes."
+      },
+      {
+        "name": "status-pulse",
+        "value": "pulse 2.4s ease infinite",
+        "purpose": "Availability dot; disabled under prefers-reduced-motion."
+      },
+      {
+        "name": "skeleton-shimmer",
+        "value": "shimmer 1.6s ease infinite",
+        "purpose": "Writing skeleton loaders; disabled under prefers-reduced-motion."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "tablet",
+        "value": "900px"
+      },
+      {
+        "name": "mobile",
+        "value": "600px"
+      }
+    ],
+    "themes": {
+      "mechanism": "data-theme attribute on <html> with values light and dark; semantic variables redefined under [data-theme=\"dark\"]."
+    }
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Solid navy action, used for the main hero call to action.",
+      "html": "<a class=\"ds-btn ds-btn-primary\" href=\"#\">View LinkedIn</a>",
+      "css": ".ds-btn { display:inline-flex; align-items:center; gap:8px; padding:12px 24px; border-radius:8px; font-size:0.9rem; font-weight:600; text-decoration:none; transition:all 0.2s ease; font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; } .ds-btn-primary { background:#0D1B35; color:#FFFFFF; } .ds-btn-primary:hover { opacity:0.85; transform:translateY(-1px); } .ds-btn:focus-visible { outline:2px solid #4A78C4; outline-offset:3px; }"
+    },
+    {
+      "name": "Outline Button",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "Secondary action and outbound 'see more' links.",
+      "html": "<a class=\"ds-btn-outline\" href=\"#\">Full profile on LinkedIn &#8599;</a>",
+      "css": ".ds-btn-outline { display:inline-flex; align-items:center; gap:8px; padding:12px 24px; border-radius:8px; font-size:0.9rem; font-weight:600; text-decoration:none; background:transparent; color:#0D1B35; border:1.5px solid #0D1B35; transition:all 0.2s ease; font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; } .ds-btn-outline:hover { background:#EDF2FC; transform:translateY(-1px); } .ds-btn-outline:focus-visible { outline:2px solid #4A78C4; outline-offset:3px; }"
+    },
+    {
+      "name": "Navigation",
+      "kind": "nav",
+      "refersTo": "nav",
+      "description": "Fixed frosted bar with monogram, section links, and theme toggle.",
+      "html": "<nav class=\"ds-nav\"><a class=\"ds-nav-logo\" href=\"#\">EN</a><ul class=\"ds-nav-links\"><li><a href=\"#\" class=\"active\">About</a></li><li><a href=\"#\">Experience</a></li><li><a href=\"#\">Projects</a></li><li><a href=\"#\">Writing</a></li></ul></nav>",
+      "css": ".ds-nav { display:flex; align-items:center; gap:32px; height:64px; padding:0 24px; background:rgba(255,255,255,0.9); backdrop-filter:blur(12px); border-bottom:1px solid #E2E6F0; box-shadow:0 1px 3px rgba(10,22,40,0.08); font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; } .ds-nav-logo { font-size:1.05rem; font-weight:700; letter-spacing:-0.02em; color:#0D1B35; text-decoration:none; } .ds-nav-links { display:flex; gap:28px; list-style:none; margin:0; padding:0; } .ds-nav-links a { font-size:0.875rem; font-weight:500; color:#4A5568; text-decoration:none; transition:color 0.2s ease; } .ds-nav-links a:hover, .ds-nav-links a.active { color:#0D1B35; } .ds-nav-links a:focus-visible { outline:2px solid #4A78C4; outline-offset:3px; border-radius:4px; }"
+    },
+    {
+      "name": "Tool Tag",
+      "kind": "chip",
+      "refersTo": "tool-tag",
+      "description": "Pill listing tools on a project card.",
+      "html": "<span class=\"ds-tag\">Claude Code</span>",
+      "css": ".ds-tag { display:inline-block; font-size:0.75rem; font-weight:600; padding:4px 10px; background:#EDF2FC; color:#2E5491; border-radius:9999px; font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }"
+    },
+    {
+      "name": "Status Badge",
+      "kind": "chip",
+      "refersTo": "status-badge",
+      "description": "Hero availability pill with a pulsing green dot.",
+      "html": "<div class=\"ds-status\"><span class=\"ds-status-dot\"></span>Open to the right opportunity</div>",
+      "css": ".ds-status { display:inline-flex; align-items:center; gap:8px; padding:7px 14px; background:#FFFFFF; border:1px solid #E2E6F0; border-radius:9999px; font-size:0.83rem; font-weight:500; color:#4A5568; box-shadow:0 1px 3px rgba(10,22,40,0.08); font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; } .ds-status-dot { width:8px; height:8px; border-radius:50%; background:#22C55E; animation:ds-pulse 2.4s ease infinite; } @keyframes ds-pulse { 0%,100% { opacity:1; transform:scale(1); } 50% { opacity:0.55; transform:scale(0.8); } } @media (prefers-reduced-motion: reduce) { .ds-status-dot { animation:none; } }"
+    },
+    {
+      "name": "Project Card",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "Soft-lift card for AI projects: status, title, description, tags, link.",
+      "html": "<article class=\"ds-card\"><div class=\"ds-card-status\">In Progress</div><h3 class=\"ds-card-title\">Project Name</h3><p class=\"ds-card-text\">A short description of what the project is and why it exists.</p><div class=\"ds-card-tags\"><span class=\"ds-card-tag\">Claude Code</span><span class=\"ds-card-tag\">JavaScript</span></div><a class=\"ds-card-link\" href=\"#\">View on GitHub &#8599;</a></article>",
+      "css": ".ds-card { display:flex; flex-direction:column; gap:14px; max-width:420px; padding:32px; background:#FFFFFF; border:1px solid #E2E6F0; border-radius:12px; box-shadow:0 2px 8px rgba(10,22,40,0.10), 0 1px 3px rgba(10,22,40,0.06); transition:box-shadow 0.2s ease, transform 0.2s ease; font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; } .ds-card:hover { box-shadow:0 8px 32px rgba(10,22,40,0.14); transform:translateY(-2px); } .ds-card-status { font-size:0.72rem; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:#15803D; } .ds-card-title { margin:0; font-size:1.15rem; font-weight:600; line-height:1.3; color:#0D1B35; } .ds-card-text { margin:0; font-size:0.93rem; line-height:1.7; color:#4A5568; } .ds-card-tags { display:flex; flex-wrap:wrap; gap:8px; } .ds-card-tag { font-size:0.75rem; font-weight:600; padding:4px 10px; background:#EDF2FC; color:#2E5491; border-radius:9999px; } .ds-card-link { font-size:0.88rem; font-weight:600; color:#2E5491; text-decoration:none; transition:color 0.2s ease; } .ds-card-link:hover { color:#122040; } .ds-card-link:focus-visible { outline:2px solid #4A78C4; outline-offset:3px; border-radius:4px; }"
+    },
+    {
+      "name": "Timeline Entry",
+      "kind": "custom",
+      "description": "Experience entry on a vertical rail with date, company, role, progression pill, and bullets.",
+      "html": "<div class=\"ds-tl\"><div class=\"ds-tl-date\">2018&ndash;Present</div><div class=\"ds-tl-company\">Company Name <span class=\"ds-tl-formerly\">(formerly Old Name)</span></div><div class=\"ds-tl-role\">Director of Product Management</div><div class=\"ds-tl-pill\">PM &rarr; Senior PM &rarr; Director</div><ul class=\"ds-tl-bullets\"><li>One short line of scope or responsibility.</li></ul></div>",
+      "css": ".ds-tl { position:relative; border-left:2px solid #E2E6F0; padding:0 0 0 32px; font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; } .ds-tl::before { content:''; position:absolute; left:-5px; top:5px; width:8px; height:8px; border-radius:50%; background:#2E5491; border:2px solid #FFFFFF; box-shadow:0 0 0 1px #E2E6F0; } .ds-tl-date { font-size:0.78rem; font-weight:600; letter-spacing:0.04em; color:#5C6A88; margin-bottom:10px; } .ds-tl-company { font-size:1.1rem; font-weight:700; color:#0D1B35; margin-bottom:4px; } .ds-tl-formerly { font-size:0.83rem; font-weight:400; color:#5C6A88; } .ds-tl-role { font-size:0.92rem; font-weight:500; color:#4A5568; margin-bottom:8px; } .ds-tl-pill { display:inline-block; font-size:0.75rem; font-weight:600; letter-spacing:0.02em; color:#2E5491; background:#EDF2FC; padding:3px 10px; border-radius:9999px; margin-bottom:14px; } .ds-tl-bullets { list-style:none; margin:0; padding:0; } .ds-tl-bullets li { position:relative; padding-left:18px; font-size:0.93rem; line-height:1.65; color:#4A5568; } .ds-tl-bullets li::before { content:''; position:absolute; left:4px; top:0.75em; width:4px; height:4px; border-radius:50%; background:#5C6A88; }"
+    },
+    {
+      "name": "Section Header",
+      "kind": "custom",
+      "description": "Headline with an optional one-line description; no label above it.",
+      "html": "<div class=\"ds-sh\"><h2 class=\"ds-sh-title\">AI Projects</h2><p class=\"ds-sh-desc\">Early days. Learning by shipping.</p></div>",
+      "css": ".ds-sh { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; } .ds-sh-title { margin:0; font-size:clamp(1.8rem, 4vw, 2.8rem); font-weight:700; line-height:1.2; letter-spacing:-0.02em; color:#0D1B35; } .ds-sh-desc { margin:12px 0 0; max-width:560px; font-size:1.05rem; color:#4A5568; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Trusted Ledger",
+    "overview": "The site borrows its calm from a well-kept ledger: navy ink on clean paper, columns that line up, nothing out of place. That steadiness comes from Eugene's banking and fintech career, but the execution is clean, modern, and approachable rather than formal. Generous whitespace, one sans-serif family, soft corners, and gentle lift on cards make it feel like a contemporary product site that also happens to be trustworthy.\n\nColor is almost entirely navy and cool gray. A single brighter blue marks links, tags, and the timeline, and a single green signals that something is live. Sections alternate between white and a faint cool tint, so the page reads as a sequence of clear entries rather than one long wall. Personality lives in small details, such as the pulsing availability dot, the role-progression pill, and a hidden terminal for the curious.\n\nLight and dark themes are both first-class. Dark mode is a deep navy night, not a gray inversion, and every accent has a lighter twin for it.",
+    "keyCharacteristics": [
+      "Navy and cool-gray palette with one accent blue and one status green",
+      "Inter throughout, heavy and tightly tracked at display sizes",
+      "Soft 8px and 12px corners, full pills for small labels",
+      "Cards rest on soft navy-tinted shadows and lift 2px on hover",
+      "Alternating white and mist section bands",
+      "Paired light and dark themes defined as semantic variables"
+    ],
+    "rules": [
+      {
+        "name": "The One Ink Rule",
+        "body": "Text is Ledger Navy or a gray from the neutral ladder. Statement Blue is for links, tags, and small markers only; never set paragraphs in it.",
+        "section": "colors"
+      },
+      {
+        "name": "The Green Means Live Rule",
+        "body": "Status Green appears only on status indicators. It is not a brand accent and never fills a button or background.",
+        "section": "colors"
+      },
+      {
+        "name": "The Paired Theme Rule",
+        "body": "Every new color is defined as a semantic variable with both a light value and a `[data-theme=\"dark\"]` value. Hard-coded accent hex in a component needs a matching dark override.",
+        "section": "colors"
+      },
+      {
+        "name": "The Heading Stands Alone Rule",
+        "body": "Sections open directly with their headline. No small uppercase label or kicker sits above a heading; if the words matter, work them into the heading or the description below it.",
+        "section": "typography"
+      },
+      {
+        "name": "The Tight Top Rule",
+        "body": "Negative letter-spacing applies only at display and headline sizes. Body and small text keep normal tracking.",
+        "section": "typography"
+      },
+      {
+        "name": "The Two-Pixel Lift Rule",
+        "body": "Hover lift is 1px for buttons and 2px for cards, never more. Lift always pairs with a shadow step, not a color change alone.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** define every new color as a semantic variable on `:root` with a matching `[data-theme=\"dark\"]` value.",
+      "**Do** open each section with its headline alone, optionally followed by a one-line description.",
+      "**Do** keep cards at 12px corners with a hairline border and Card Rest shadow, lifting 2px on hover.",
+      "**Do** use Inter only; express hierarchy through weight and tracking.",
+      "**Do** alternate Paper White and Mist backgrounds between sections."
+    ],
+    "donts": [
+      "**Don't** introduce a second accent hue; Statement Blue and Status Green are the only colors outside navy and gray.",
+      "**Don't** use Status Green for small text on a light background; it fails contrast (about 2.3:1). Use Status Green Deep for light-mode status text.",
+      "**Don't** go lighter than Quiet Gray for any readable text; every text color must pass 4.5:1 on its background in both themes.",
+      "**Don't** set body text in Statement Blue or fill large areas with it.",
+      "**Don't** lift elements more than 2px or use shadows heavier than Card Lift outside the terminal.",
+      "**Don't** bring the terminal's code-editor colors into the main page."
+    ]
+  }
+}

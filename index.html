@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Eugene Nam — Director of Product</title>
+  <title>Eugene Nam | Director of Product</title>
   <meta name="description" content="Director of Product with 10 years in fintech, now building AI projects from scratch. Open to the right opportunity." />
   <meta name="robots" content="index, follow" />
 
   <!-- Open Graph -->
-  <meta property="og:title"       content="Eugene Nam — Director of Product" />
+  <meta property="og:title"       content="Eugene Nam | Director of Product" />
   <meta property="og:description" content="Director of Product with 10 years in fintech, now building AI projects from scratch." />
   <meta property="og:url"         content="https://eugenenam.com" />
   <meta property="og:type"        content="website" />
@@ -19,6 +19,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Set theme before first paint so dark-mode visitors don't see a light flash -->
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem('theme'); } catch (e) {}
+      if (!t) t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
 
   <!-- Google Analytics GA4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-02DGZ56J71"></script>
@@ -116,7 +126,7 @@
           </div>
 
           <div class="hero-photo">
-            <img src="img/headshot_eugene.jpg" alt="Eugene Nam, Director of Product Management" />
+            <img src="img/headshot_eugene.jpg" width="300" height="300" alt="Eugene Nam, Director of Product Management" />
           </div>
 
         </div>
@@ -128,13 +138,12 @@
     <section id="about">
       <div class="container">
         <div class="section-header">
-          <span class="section-label">About</span>
           <h2>Background</h2>
         </div>
 
         <div class="about-layout">
           <div class="about-text">
-            <p>I started my career in corporate banking — eight years across RBC Capital Markets,
+            <p>I started my career in corporate banking, spending eight years across RBC Capital Markets,
                Royal Bank of Scotland, and ABN AMRO. It was rigorous and global, and taught me
                how to think about risk, systems, and operating at scale.</p>
             <p>In 2015, I made the deliberate jump into product management, joining VenueBook as
@@ -154,14 +163,13 @@
     <section id="experience">
       <div class="container">
         <div class="section-header">
-          <span class="section-label">Work</span>
           <h2>Experience</h2>
         </div>
 
         <div class="timeline">
 
           <div class="timeline-item">
-            <div class="timeline-date">2018 &mdash; Present</div>
+            <div class="timeline-date">2018&ndash;Present</div>
             <div class="timeline-header">
               <span class="timeline-company">Willow Wealth</span>
               <span class="timeline-formerly">(formerly Yieldstreet)</span>
@@ -170,7 +178,7 @@
             <div class="timeline-progression">PM &rarr; Senior PM &rarr; Director of Product</div>
             <ul class="timeline-bullets">
               <li>Led product strategy for a wealth platform giving everyday investors access to
-                  alternative assets — real estate, private credit, structured notes, and more.</li>
+                  alternative assets: real estate, private credit, structured notes, and more.</li>
               <li>Grew with the company through multiple funding rounds and a full rebrand,
                   staying focused on user outcomes and business impact.</li>
               <li>Built and scaled cross-functional collaboration across engineering, design,
@@ -179,13 +187,13 @@
           </div>
 
           <div class="timeline-item">
-            <div class="timeline-date">2015 &mdash; 2017</div>
+            <div class="timeline-date">2015&ndash;2017</div>
             <div class="timeline-header">
               <span class="timeline-company">VenueBook</span>
             </div>
             <div class="timeline-role">Product Manager</div>
             <ul class="timeline-bullets">
-              <li>First PM role — joined an early-stage startup building a marketplace for
+              <li>First PM role. Joined an early-stage startup building a marketplace for
                   event venue bookings in NYC.</li>
               <li>Drove product development from ideation through launch, working closely
                   with engineering and design.</li>
@@ -193,7 +201,7 @@
           </div>
 
           <div class="timeline-item">
-            <div class="timeline-date">2007 &mdash; 2015</div>
+            <div class="timeline-date">2007&ndash;2015</div>
             <div class="timeline-header">
               <span class="timeline-company">Corporate Banking</span>
             </div>
@@ -220,7 +228,6 @@
     <section id="projects">
       <div class="container">
         <div class="section-header">
-          <span class="section-label">Building</span>
           <h2>AI Projects</h2>
           <p class="section-description">Early days. Learning by shipping.</p>
         </div>
@@ -266,7 +273,6 @@
     <section id="writing">
       <div class="container">
         <div class="section-header">
-          <span class="section-label">Writing</span>
           <h2>From Medium</h2>
           <p class="section-description">Writing about product, AI, and whatever I'm figuring out.</p>
         </div>
@@ -289,7 +295,6 @@
     <section id="contact">
       <div class="container">
         <div class="contact-inner">
-          <span class="section-label">Say hello</span>
           <h2>Let's talk.</h2>
           <p>I'm open to conversations about product, AI, or the right opportunity.</p>
           <div class="contact-social">
@@ -323,7 +328,7 @@
           <span class="terminal-dot dot-yellow"></span>
           <span class="terminal-dot dot-green-dot"></span>
         </div>
-        <span class="terminal-title">visitor@eugenenam.com — bash</span>
+        <span class="terminal-title">visitor@eugenenam.com: bash</span>
         <button class="terminal-close" aria-label="Close terminal">&times;</button>
       </div>
       <div class="terminal-body" id="terminalBody">

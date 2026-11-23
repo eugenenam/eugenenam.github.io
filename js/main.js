@@ -9,14 +9,15 @@ const MEDIUM_POSTS_URL = '/medium-posts.json';
    Theme
    ------------------------------------------------ */
 function getPreferredTheme() {
-  const saved = localStorage.getItem('theme');
+  let saved = null;
+  try { saved = localStorage.getItem('theme'); } catch { /* storage blocked */ }
   if (saved) return saved;
   return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
 }
 
 function applyTheme(theme) {
   document.documentElement.setAttribute('data-theme', theme);
-  localStorage.setItem('theme', theme);
+  try { localStorage.setItem('theme', theme); } catch { /* storage blocked */ }
 }
 
 function toggleTheme() {
@@ -124,12 +125,16 @@ function safeUrl(url) {
 function renderPosts(items) {
   const grid = document.getElementById('postsGrid');
   grid.innerHTML = items.map(post => {
-    const excerpt = stripHtml(post.description).replace(/\s+/g, ' ').trim().slice(0, 160) + '…';
+    // Only show an excerpt when the feed actually has text; otherwise the card showed a lone "…"
+    const text = stripHtml(post.description || '').replace(/\s+/g, ' ').trim();
+    const excerpt = text
+      ? `<span class="post-excerpt">${escapeHtml(text.length > 160 ? text.slice(0, 160) + '…' : text)}</span>`
+      : '';
     return `
       <a href="${safeUrl(post.link)}" target="_blank" rel="noopener noreferrer" class="post-card">
         <span class="post-date">${escapeHtml(formatDate(post.pubDate))}</span>
         <span class="post-title">${escapeHtml(post.title)}</span>
-        <span class="post-excerpt">${escapeHtml(excerpt)}</span>
+        ${excerpt}
         <span class="post-read-more">Read on Medium ↗</span>
       </a>`;
   }).join('');
@@ -186,7 +191,7 @@ const TERMINAL_COMMANDS = {
   whoami: () => [
     { text: 'Eugene Nam', cls: 'accent' },
     { text: 'Director of Product Management' },
-    { text: 'New York, NY' },
+    { text: 'Houston, TX' },
     { text: '' },
     { text: 'Builder. Curious. Always learning.', cls: 'muted' },
   ],
@@ -196,9 +201,9 @@ const TERMINAL_COMMANDS = {
   history: () => [
     { text: '[ career timeline ]', cls: 'accent' },
     { text: '' },
-    { text: '  2018 – Present   Willow Wealth — Director of Product' },
-    { text: '  2015 – 2017      VenueBook — Product Manager' },
-    { text: '  2007 – 2015      RBC / RBS / ABN AMRO — Corporate Banking' },
+    { text: '  2018 – Present   Willow Wealth, Director of Product' },
+    { text: '  2015 – 2017      VenueBook, Product Manager' },
+    { text: '  2007 – 2015      RBC / RBS / ABN AMRO, Corporate Banking' },
   ],
   skills: () => [
     { text: '[ product skills ]', cls: 'accent' },
@@ -211,14 +216,14 @@ const TERMINAL_COMMANDS = {
     { text: '  Vanilla JS          ███░░░░░░░  25%  (Claude helps)', cls: 'muted' },
   ],
   'cat about.txt': () => [
-    { text: 'I started my career in corporate banking — eight years' },
+    { text: 'I started my career in corporate banking, eight years' },
     { text: 'across RBC Capital Markets, RBS, and ABN AMRO.' },
     { text: '' },
     { text: 'In 2015, I made the deliberate jump into product management.' },
     { text: 'By 2018, I joined what is now Willow Wealth and grew from' },
     { text: 'PM → Senior PM → Director of Product.' },
     { text: '' },
-    { text: "Lately, I've been drawn into AI — not just using the tools," },
+    { text: "Lately, I've been drawn into AI. Not just using the tools," },
     { text: 'but actually building with them. This site is my first project.', cls: 'muted' },
   ],
   contact: () => [
